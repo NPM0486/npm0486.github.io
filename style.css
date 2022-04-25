@@ -1,0 +1,27 @@
+body
+{
+	background-color: #201c1c;
+	font-familly: Verdana;
+	font-size: 20px;
+	color: white;
+}
+
+h1
+{
+	font-size: 80px;
+}
+
+a:link
+{
+	color: #fff9a8;
+}
+
+a:visited
+{
+	color: #fff9a8;
+}
+
+a:hover
+{
+	color: yellow;
+}
