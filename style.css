@@ -1,7 +1,8 @@
+/* MAIN */
 body
 {
-	background-color: #201c1c;
-	font-familly: Verdana;
+	background-color: #202124;
+	font-family: Verdana;
 	font-size: 20px;
 	color: white;
 }
@@ -25,3 +26,61 @@ a:hover
 {
 	color: yellow;
 }
+
+/* CONTAINER MAIN*/
+#container
+{
+	width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#header
+{
+	text-align: center;
+	padding: 15px;
+}
+
+#nav
+{
+	float:left;
+	text-align: left;
+	min-height: 620px;
+	width: 120px;
+}
+
+#content
+{
+	float:left;
+	text-align: center;
+	min-height: 620px;
+	width: 720px;
+}
+
+#ad
+{
+	float:left;
+	width: 160px;
+	min-height: 620px;
+	text-align: right;
+}
+
+#footer
+{
+	clear: both;
+	min-height: 350px;
+	background-color: rgb(37, 37, 37);
+	width: 100%;
+}
+#footer_logo
+{
+	float: left;
+	padding: 25px;
+}
+#footer_host
+{
+	float: left;
+	margin-top: 80px;
+	margin-left: 25px;
+}
+
