@@ -2,9 +2,18 @@
 body
 {
 	background-color: #202124;
-	font-family: Verdana;
+	font-family: 'Nunito', sans-serif;
 	font-size: 20px;
 	color: white;
+}
+
+table
+{
+	clear: both;
+	width: 1000;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
 }
 
 h1
@@ -27,18 +36,12 @@ a:hover
 	color: yellow;
 }
 
-/* CONTAINER MAIN*/
+/*	ID	*/
 #container
 {
 	width: 1000px;
 	margin-left: auto;
 	margin-right: auto;
-}
-
-#header
-{
-	text-align: center;
-	padding: 15px;
 }
 
 #nav
@@ -47,6 +50,21 @@ a:hover
 	text-align: left;
 	min-height: 620px;
 	width: 120px;
+}
+
+.menu
+{
+	float: left;
+	min-width: 50px;
+	width: 25;
+	font-size: 15px;
+	padding: 15px;
+}
+
+.menu:hover
+{
+	border-bottom: 2px dotted red;
+	font-size: 17px;
 }
 
 #content
@@ -84,3 +102,11 @@ a:hover
 	margin-left: 25px;
 }
 
+/*	CLASS	*/
+
+.header
+{
+	text-align: center;
+	padding: 15px;
+	font-weight: 900;
+}
