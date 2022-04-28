@@ -21,6 +21,8 @@ h1
 	font-size: 80px;
 }
 
+/* LINK */
+
 a:link
 {
 	color: #fff9a8;
@@ -49,23 +51,9 @@ a:hover
 	float:left;
 	text-align: left;
 	min-height: 620px;
-	width: 120px;
+	width: 90px;
 }
 
-.menu
-{
-	float: left;
-	min-width: 50px;
-	width: 25;
-	font-size: 15px;
-	padding: 15px;
-}
-
-.menu:hover
-{
-	border-bottom: 2px dotted red;
-	font-size: 17px;
-}
 
 #content
 {
@@ -73,6 +61,7 @@ a:hover
 	text-align: center;
 	min-height: 620px;
 	width: 720px;
+	padding: 15px;
 }
 
 #ad
@@ -95,10 +84,27 @@ a:hover
 	float: left;
 	padding: 25px;
 }
+
+#footer_logo:hover
+{
+	cursor: pointer;
+}
+
 #footer_host
 {
 	float: left;
-	margin-top: 80px;
+	margin-top: 60px;
+	margin-left: 25px;
+}
+#footer_host:hover
+{
+	cursor: pointer;
+}
+
+#copy
+{
+	float: left;
+	margin-top: 110px;
 	margin-left: 25px;
 }
 
@@ -107,6 +113,31 @@ a:hover
 .header
 {
 	text-align: center;
-	padding: 15px;
 	font-weight: 900;
+}
+
+.jcont
+{
+	text-align: justify;
+}
+
+.menu
+{
+	float: left;
+	min-width: 50px;
+	width: 25;
+	font-size: 15px;
+	padding: 15px;
+}
+
+.menu:hover
+{
+	border-bottom: 2px dotted red;
+	font-size: 17px;
+	cursor: pointer;
+}
+
+.icon
+{
+	font-size: 40px;
 }
