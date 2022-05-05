@@ -113,6 +113,7 @@ a:hover
 	min-height: 350px;
 	background-color: rgb(37, 37, 37);
 	width: 100%;
+	margin-top: 80px;
 }
 #footer_logo
 {
@@ -193,4 +194,9 @@ a:hover
 	max-width: 1000px;
 	margin-left: auto;
 	margin-right: auto;
+}
+
+.javas
+{
+	text-align: center;
 }
