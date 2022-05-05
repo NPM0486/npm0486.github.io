@@ -1,0 +1,7 @@
+### PROTECT FILES ###
+<FilesMatch "\.(htacces|htpasswd|ini|fla|psd|log|sh)$">
+Order Allow,Deny
+</FilesMatch>
+
+<!-- RewriteEngine on
+RewriteRule main index.html -->
