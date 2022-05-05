@@ -153,6 +153,13 @@ a:hover
 	background-color: #333538;
 }
 
+#index
+{
+	float: left;
+	margin-top: 110px;
+	margin-left: 25px;
+}
+
 /*	CLASS	*/
 
 .header
