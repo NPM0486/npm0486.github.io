@@ -3,5 +3,5 @@
 Order Allow,Deny
 </FilesMatch>
 
-<!-- RewriteEngine on
-RewriteRule main index.html -->
+RewriteEngine on
+RewriteRule javas javas.html
