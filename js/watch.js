@@ -1,3 +1,5 @@
+/*script from: https://www.youtube.com/watch?v=OcwON22ctYc*/
+
 function count()
 		{
 			var today = new Date();

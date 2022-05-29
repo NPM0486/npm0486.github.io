@@ -1,0 +1,27 @@
+1. <header> </header>
+    Tag for main header of website. Header tag in Body means its Header of that website.
+    Header in another tag like Article means its Header of that article.
+
+2. <nav> </nav>
+    Main navigation menu.
+
+3,1. <article> </article>
+    Article, for example post. Its repetitive. We can add Article in Article.
+
+3,2. <section> <section>
+    Section its like Article, but its part of something else when Article is own thing.
+
+EXAMPLE:
+    Article - blog
+    Section - comment section
+    Div - comment
+
+4. <main> </main>
+    Main section for website, it can be used only one time on website.
+    Have to be in Body and cant be in another tag.
+
+5. <aside> </aside>
+    Side conent of website. Ex. Add.
+
+6. <footer> </footer>
+    Just footer. We can add more than one.

@@ -5,7 +5,7 @@ body
 	font-family: 'Nunito', sans-serif;
 	font-size: 20px;
 	color: white;
-	margin: 0px;
+	margin: 0px !important;
 }
 
 table
@@ -29,46 +29,98 @@ h1
 	padding: 10px;
 }
 
-/* 	Lists	*/
-
-ol
+a
 {
-	margin-top: 5px;
-}
-
-ol>li>ul
-{
-	padding: 0%;
-}
-
-ol > li > ul > li
-{
-	list-style-type: none;
-}
-ol > li > ul > li:before
-{
-	content: "✶";
-	color: rgb(220, 228, 133);
-	margin-right: 5px;
-}
-
-
-/* LINK */
-
-a:link
-{
-	color: #ffffff;
 	text-decoration: none;
-}
-
-a:visited
-{
-	color: #ffffff;
+	color: white;
 }
 
 a:hover
 {
-	color: yellow;
+	color: #044343;
+}
+
+/*nav*/
+.nav2
+{
+	padding: 0;
+	margin: 0;
+	height: 80px;
+	display: none;
+}
+
+.nav3
+{
+	display: block;
+}
+.nav
+{
+	text-align: center;
+	text-transform: uppercase;
+	padding: 0;
+	margin: 0;
+	font-size: 20px;
+	background-color: #045757;
+	height: 80px;
+}
+
+.nav a
+{
+	display: block;
+	text-decoration: none;
+	color: white;
+	padding: 7px;
+}
+
+.nav a:hover
+{
+	color: black;
+	background-color: #044343;
+}
+
+.nav > ol
+{
+	display: inline-block;
+	list-style-type: none;
+}
+
+.nav > ol > ul
+{
+	float: left;
+	border-right: dotted #222222;
+	height: 40px;
+	width: 150px;
+	list-style-type: none;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.nav > ol > ul:first-child
+{
+	border-left: dotted #222222;
+}
+
+nav > ol > ul > li
+{
+	padding: 0;
+	margin: 0;
+	height: 40px;
+	display: none;
+	background-color: #044343;
+}
+
+nav > ol > ul:hover > li
+{
+	display: block;
+}
+
+.sticky
+{
+	width: 100%;
+	left: 0;
+	top: 0;
+	z-index: 100;
+	position: fixed;
 }
 
 /*	ID	*/
@@ -77,9 +129,10 @@ a:hover
 	width: 1000px;
 	margin-left: auto;
 	margin-right: auto;
+	clear: both;
 }
 
-#nav
+#nave
 {
 	float:left;
 	text-align: left;
@@ -111,7 +164,7 @@ a:hover
 {
 	clear: both;
 	min-height: 350px;
-	background-color: rgb(37, 37, 37);
+	background-color: #1a1a1d;
 	width: 100%;
 	margin-top: 80px;
 }
@@ -177,10 +230,12 @@ a:hover
 {
 	float: left;
 	min-width: 50px;
-	width: 25;
+	width: 25px;
 	font-size: 15px;
 	padding: 15px;
 	text-decoration: none;
+	text-transform: uppercase;
+	display: block;
 }
 
 
@@ -207,3 +262,4 @@ a:hover
 {
 	text-align: center;
 }
+

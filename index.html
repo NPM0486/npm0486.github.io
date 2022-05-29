@@ -12,7 +12,6 @@
 	<link rel="stylesheet" href="css/style.css" type="text/css"/>
 
 <!--	JS		-->
-<!-- script from: https://www.youtube.com/watch?v=OcwON22ctYc-->
 	<script type="text/javascript" src="js/watch.js"></script>
 
 <!--	GOOGLE FONT	-->
@@ -20,7 +19,9 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;900&display=swap" rel="stylesheet">
 
-
+<!--	JQuery		-->
+<script src="js/jquery.js"></script>
+<script src="js/stickynav.js"></script>
 
 <!--	FONTELLO	-->
 <link rel="stylesheet" href="css/fontello.css" type="text/css" />
@@ -31,22 +32,27 @@
 <!--	BODY	-->
 <body onload="count();">
 
-
+	<!--	HEADER	-->
+	<header>
+			<h1 class="header">>.Hello World!</h1>
+			<nav class="nav">
+				<ol>
+					<ul><a href="slides.html">Slides</a></ul>
+					<ul><a href="javas.html">Javas</a>
+							<li><a href="#">Hi</a></li></ul>
+					<ul><a href="slides.html">Slides</a></ul>
+				</ol>
+			</nav>
+			<div class="nav2">
+				
+			</div>
+	</header>
 
 <!--	CONTAINER	-->
 <div id="container">
 
-
-
-	<!--	HEADER	-->
-	<div class="header">
-		<h1>>.Hello World!</h1>
-	</div>
-
-
-
 	<!-- NAV MENU	-->
-	<div id="nav">
+	<div id="nave">
 		<div class="menu"><a href="slides.html">Slides</a></div>
 		<div class="menu"><a href="javas">Javas</a></div>
 		<div class="menu">Projekty</div>
@@ -94,9 +100,6 @@
 		<td width="100">POLE</td> <td width="200" >POLE</td> <td width="100">POLE</td>
 	</tr>
 </table>
-</body>
-
-
 
 <!--	FOOTER	-->
 <footer>
@@ -118,4 +121,5 @@
 	</div>
 </footer>
 
+</body>
 </html>
