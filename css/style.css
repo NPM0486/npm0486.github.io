@@ -1,4 +1,11 @@
 /* MAIN */
+
+*::selection
+{
+	color: white;
+	background: #044343;
+}
+
 body
 {
 	background-color: #202124;
