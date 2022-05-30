@@ -11,8 +11,6 @@
 	<meta name="author" content="Nikolas Papenfus"/>
 	<link rel="stylesheet" href="css/style.css" type="text/css"/>
 
-<!--	JS		-->
-	<script type="text/javascript" src="js/watch.js"></script>
 
 <!--	GOOGLE FONT	-->
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -32,8 +30,8 @@
 <!--	BODY	-->
 <body onload="count();">
 
-	<!--	HEADER	-->
-	<header>
+<!--	HEADER	-->
+<header>
 			<h1 class="header">>.Hello World!</h1>
 			<nav class="nav">
 				<ol>
@@ -47,58 +45,14 @@
 			<div class="nav2">
 				
 			</div>
-	</header>
+</header>
 
-<!--	CONTAINER	-->
-<div id="container">
-
-	<!-- NAV MENU	-->
-	<aside id="nave">
-		<nav>
-			<div class="menu"><a href="slides.html">Slides</a></div>
-			<div class="menu"><a href="javas">Javas</a></div>
-			<div class="menu">Projekty</div>
-			<div class="menu">Projekty</div>
-			<div class="menu">Projekty</div>
-		</nav>
-	</aside>
-
-
-
-	<!--	CONTENT	-->
+<!--	Content	-->
 <main>
-	<section id="content">
-		<header>
-			<h2>
-				<a href="https://github.com/NPM0486/npm0486.github.io" target="_blank" title="source code">I'm hosted with GitHub Pages.</a>
-			</h2>
-			<br/>
-		</header>	
-			
-			<!-- JS WATCH	-->
-			<time id="watch"></time>
-		<br/><br/>
-		<article class="jcont">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce consectetur consequat urna, at fringilla elit faucibus non. 
-		Suspendisse vitae justo at augue posuere tempor. Quisque euismod ipsum vitae leo facilisis, et porttitor sem porttitor. 
-		Nulla non dictum orci. Vestibulum pretium, diam a condimentum aliquam, ligula turpis dignissim eros, a interdum quam odio vel nisl. 
-		Vestibulum accumsan lectus quis eros pulvinar, quis aliquam lacus posuere. Duis lobortis tortor nec sagittis fringilla. 
-		Quisque semper enim a ex mollis, sed tincidunt elit maximus. Mauris non velit volutpat, lacinia dui quis, molestie elit. 
-		Ut finibus dolor arcu, nec egestas diam consequat vestibulum. Nam eu ullamcorper diam, ac egestas massa. Nulla maximus fringilla eros.</article>
-	</section>
+<?php
+	echo "Hi";
+?>
 </main>
-
-
-
-	<!--	AD	-->
-	<aside id="ad">
-		<img src="img/rek.png"/>
-	</aside>
-</div>
-
-
-
-
-
 
 <!--	FOOTER	-->
 <footer id="footer">
