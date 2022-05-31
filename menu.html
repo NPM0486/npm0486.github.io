@@ -13,17 +13,14 @@
 	<link rel="stylesheet" href="mycss/main.css" type="text/css"/>
 
 
-
-<!--	JS		-->
-<!-- script from: https://www.youtube.com/watch?v=OcwON22ctYc-->
-	<script type="text/javascript" src="js/watch.js"></script>
-
-    <!--	GOOGLE FONT	-->
+<!--	GOOGLE FONT	-->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;900&display=swap" rel="stylesheet">
 
-
+<!--	JQuery		-->
+<script src="js/jquery.js"></script>
+<script src="js/stickynav.js"></script>
 
 <!--	FONTELLO	-->
 <link rel="stylesheet" href="css/fontello.css" type="text/css" />
@@ -31,37 +28,29 @@
 </head>
 
 
-
-
-
-
-
 <!--	BODY	-->
 <body onload="count();">
 
-<h1 class="header">javas</h1>
-
-			
-<div class="javas">
-<div id="watch"></div>
-</div>
-
-
-
-
-
-
-
+<!--	HEADER	-->
+<header>
+			<nav class="newmen">
+				<div class="man">
+					<a href="index.html"><div class="men" id="main">Main</div></a>
+					<a href="index.html"><div class="men">Main</div></a>
+					<a href="index.html"><div class="men">Main</div></a>
+					<a href="index.html"><div class="men">Main</div></a>
+				</div>
+			</nav>
+</header>
 
 
 <!--	FOOTER	-->
-<footer>
-	<div id="footer">
-		<div id="footer_logo">
+<footer id="footer">
+		<figure id="footer_logo">
 			<a href="https://npm0486.github.io" title="main side">
 				<img src="img/logo_prototyp.png" height="200px"/>
 			</a>
-		</div>
+		</figure>
 		<div id="footer_host">
 			<h6>
 				<a href="https://github.com/NPM0486/npm0486.github.io" target="_blank" title="source code"><i class="icon-github-circled icon"></i>I'm hosted with GitHub Pages.</a>
@@ -71,7 +60,7 @@
 			<p id="copy">Nikolas papenfus &copy 2022</p>
 			<p id="index"><a href="index.html">index</a></p>
 		</div>
-	</div>
 </footer>
 
+</body>
 </html>

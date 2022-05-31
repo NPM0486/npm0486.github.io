@@ -1,52 +1,3 @@
-/* MAIN */
-
-*::selection
-{
-	color: white;
-	background: #044343;
-}
-
-body
-{
-	background-color: #202124;
-	font-family: 'Nunito', sans-serif;
-	font-size: 20px;
-	color: white;
-	margin: 0px !important;
-}
-
-table
-{
-	clear: both;
-	width: 1000;
-	margin-left: auto;
-	margin-right: auto;
-	text-align: center;
-}
-
-h1
-{
-	font-size: 80px;
-	letter-spacing: 3px;
-	text-shadow: 
-	5px 5px 0 #0f1011,
-	-5px -5px 0 #0f1011,
-	-5px -5px 0 #0f1011,
-	5px 5px 0 #0f1011;
-	padding: 10px;
-}
-
-a
-{
-	text-decoration: none;
-	color: white;
-}
-
-a:hover
-{
-	color: #044343;
-}
-
 /*nav*/
 .nav2
 {
@@ -164,45 +115,29 @@ nav > ol > ul:hover > li
 	float:left;
 	width: 160px;
 	min-height: 620px;
-	text-align: right;
+	position: relative;
 }
 
-#footer
+#ad .try
 {
-	clear: both;
-	min-height: 350px;
-	background-color: #1a1a1d;
-	width: 100%;
-	margin-top: 80px;
-}
-#footer_logo
-{
-	float: left;
-	padding: 25px;
+	position: absolute;
+	width: 160px;
+	height: 600px;
+	left: 0px;
+	bottom: 20px;
+	margin: 0;
+	opacity: 0;
+	background-color: rgba(0, 0, 0, 0.267);
+	transition: opacity 0.8s ease-in-out;
 }
 
-#footer_logo:hover
+#ad:hover .try
 {
 	cursor: pointer;
+	opacity: 0.8;
 }
 
-#footer_host
-{
-	float: left;
-	margin-top: 60px;
-	margin-left: 25px;
-}
-#footer_host:hover
-{
-	cursor: pointer;
-}
 
-#copy
-{
-	float: left;
-	margin-top: 110px;
-	margin-left: 25px;
-}
 
 #slides
 {
@@ -269,4 +204,6 @@ nav > ol > ul:hover > li
 {
 	text-align: center;
 }
+
+
 
