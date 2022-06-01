@@ -9,7 +9,9 @@
 	<meta name="description" content="This is my portfolio and what I did during school."/>
 	<meta name="keywords" content="nikolas,papenfus,school,szkola,zespol szkol, polkowice, informatyk"/>
 	<meta name="author" content="Nikolas Papenfus"/>
-	<link rel="stylesheet" href="mycss/style.css" type="text/css"/>
+
+<!--	CSS		-->
+	<link rel="stylesheet" href="mycss/javas.css" type="text/css"/>
 	<link rel="stylesheet" href="mycss/main.css" type="text/css"/>
 
 
@@ -17,6 +19,8 @@
 <!--	JS		-->
 <!-- script from: https://www.youtube.com/watch?v=OcwON22ctYc-->
 	<script type="text/javascript" src="js/watch.js"></script>
+	<script type="text/javascript" src="js/check.js"></script>
+	<script type="text/javascript" src="js/do.js"></script>
 
 	<!--	JQuery		-->
 <script src="js/jquery.js"></script>
@@ -60,10 +64,36 @@
 		</nav>
 </header>
 
+
+
+
+
+
 			
-<div class="javas">
-<div id="watch"></div>
-</div>
+<main class="javas">
+
+	<div id="watch"></div>
+
+</br></br>
+
+	<div>
+		<input type="text" id="pole" />
+		<input type="submit" value="Check" onclick="check()"/>
+		<div id="result"></div>
+	</div>
+
+</br></br>
+
+	<div>
+		<input type="number" id="first" />
+		<input type="number" id="second" />
+		<input type="submit" value="Do" onclick="doit()" />
+		<div id="numbers"></div>
+		<div id="numbers1"></div>
+		<div id="numbers2"></div>
+		<div id="numbers3"></div>
+	</div>
+</main>
 
 
 
