@@ -50,8 +50,13 @@ a:hover
 }
 
 /*	New Menu	*/
-
-.men
+.menu_space
+{
+	height: 100px;
+	margin: 0;
+	padding: 0;
+}
+.menu_button
 {
 	border: white solid 1px;
 	border-radius: 15px;
@@ -75,41 +80,33 @@ a:hover
 
 }
 
-.men:hover
+.menu_button:hover
 {
 	background-color: #044343;
 	transform: scale(0.9);
 }
 
-.newmen
+.menu_container
 {
 	width: 100%;
-	height: 700px;
 	text-align: center;
 	padding: 0;
 	margin: 0;
 }
 
-.newmen a:hover
+.menu_container a:hover
 {
 	color: black;
 }
 
-.man
+.menu
 {
 	display: inline-block;
-	margin-top: 200px;
-	transition: all 0.3s;
 }
 
-.man2
+.menu_animation
 {
-	margin-top: 0;
-}
-
-.man3
-{
-	transition: background-color 0.3s ease;
+	transition: all 0.3s ease-in-out;
 }
 
 .sticky
@@ -121,7 +118,7 @@ a:hover
 	z-index: 100;
 	position: fixed;
 	height: 55px;
-	background-color: #044343;
+	background-color: #1a1a1d;
 }
 
 /*	Footer	*/

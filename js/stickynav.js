@@ -1,17 +1,15 @@
 /*https://www.youtube.com/watch?v=vd_GnTBzJ4U&t=69s*/
 	
 $(document).ready(function() {
-	var NavY = $('.newmen').offset().top;
+	var NavY = $('.menu').offset().top;
 	 
 	var stickyNav = function(){
 	var ScrollY = $(window).scrollTop();
 		  
 	if (ScrollY > NavY) { 
-		$('.man3').addClass('sticky');
-		$('.man').addClass('man2');
+		$('.menu_animation').addClass('sticky');
 	} else {
-		$('.man3').removeClass('sticky'); 
-		$('.man').removeClass('man2');
+		$('.menu_animation').removeClass('sticky'); 
 	}
 	};
 	 
