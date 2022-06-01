@@ -1,0 +1,20 @@
+#container
+{
+	clear: both;
+	margin: 0;
+	padding: 0;
+}
+
+#content
+{
+	text-align: center;
+	min-height: 620px;
+	width: 720px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.jcont
+{
+	text-align: justify;
+}

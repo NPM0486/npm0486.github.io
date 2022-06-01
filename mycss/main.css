@@ -3,7 +3,7 @@
 *::selection
 {
 	color: white;
-	background: #044343;
+	background: darkcyan;
 }
 
 body
@@ -41,6 +41,9 @@ a:hover
 	color: #044343;
 }
 
+
+/*	Header	*/
+
 #header
 {
 	background-image: url(https://github.com/NPM0486/npm0486.github.io/blob/main/img/menu.png?raw=true);
@@ -49,7 +52,6 @@ a:hover
 	height: 700px;
 }
 
-/*	New Menu	*/
 .menu_space
 {
 	height: 100px;
@@ -130,12 +132,27 @@ a:hover
 	background-color: #1a1a1d;
 	width: 100%;
 	margin-top: 80px;
+	padding: 30px;
 }
 #footer_logo
 {
+	margin: 0;
+	padding: 0;
+
+	margin-left: 10px;
+	margin-right: 10px;
+
+	height: 200px;
+	line-height: 200px;
 	float: left;
-	padding: 25px;
 }
+
+#footer_host p
+{
+	margin: 0;
+	padding: 0;
+}
+
 
 #footer_logo:hover
 {
@@ -144,9 +161,12 @@ a:hover
 
 #footer_host
 {
+	margin: 0 auto;
 	float: left;
-	margin-top: 60px;
-	margin-left: 25px;
+	height: 200px;
+	line-height: 200px;
+	margin-left: 10px;
+	margin-right: 10px;
 }
 #footer_host:hover
 {
@@ -155,7 +175,21 @@ a:hover
 
 #copy
 {
+	margin: 0 auto;
 	float: left;
-	margin-top: 110px;
-	margin-left: 25px;
+	height: 200px;
+	line-height: 200px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+#index
+{
+	margin: 0;
+	padding: 0;
+	float: left;
+	height: 200px;
+	line-height: 200px;
+	margin-left: 10px;
+	margin-right: 10px;
 }
