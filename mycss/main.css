@@ -21,11 +21,13 @@ h1
 	font-size: 80px;
 	letter-spacing: 3px;
 	text-shadow: 
-	5px 5px 0 #0f1011,
-	-5px -5px 0 #0f1011,
-	-5px -5px 0 #0f1011,
-	5px 5px 0 #0f1011;
-	padding: 10px;
+	5px 5px 0 #044343,
+	-5px -5px 0  #044343,
+	-5px -5px 0  #044343,
+	5px 5px 0  #044343;
+	height: 100px;
+	text-align: center;
+	padding-top: 200px;
 }
 
 a
@@ -39,9 +41,11 @@ a:hover
 	color: #044343;
 }
 
-header
+#header
 {
-	background-image: url("img/menu.png");
+	background-image: url(https://github.com/NPM0486/npm0486.github.io/blob/main/img/menu.png?raw=true);
+	background-repeat: no-repeat;
+	background-position-x: center;
 	height: 700px;
 }
 
@@ -71,30 +75,19 @@ header
 
 }
 
-#main
-{
-	position: absolute;
-	top: 0px;
-	left: 0px;
-}
-
 .men:hover
 {
 	background-color: #044343;
 	transform: scale(0.9);
 }
 
-
-
 .newmen
 {
-	border: wheat solid 1px;
 	width: 100%;
-	height: 200px;
+	height: 700px;
 	text-align: center;
 	padding: 0;
 	margin: 0;
-	position: relative;
 }
 
 .newmen a:hover
@@ -105,21 +98,30 @@ header
 .man
 {
 	display: inline-block;
-	border: red solid 1px;
+	margin-top: 200px;
+	transition: all 0.3s;
 }
 
-#nag
+.man2
 {
-	max-height: 700px;
-	overflow: hidden;
-	border: peru solid 1px;
+	margin-top: 0;
+}
+
+.man3
+{
+	transition: background-color 0.3s ease;
+}
+
+.sticky
+{
 	width: 100%;
-	text-align: center;
-}
-
-#img
-{
-	border: rebeccapurple solid 1px;
+	left: 0;
+	top: 0;
+	padding-top: 10px;
+	z-index: 100;
+	position: fixed;
+	height: 55px;
+	background-color: #044343;
 }
 
 /*	Footer	*/
