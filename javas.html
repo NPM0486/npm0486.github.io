@@ -9,6 +9,7 @@
 	<meta name="description" content="This is my portfolio and what I did during school."/>
 	<meta name="keywords" content="nikolas,papenfus,school,szkola,zespol szkol, polkowice, informatyk"/>
 	<meta name="author" content="Nikolas Papenfus"/>
+	<link rel="icon" href="img/icon.png">
 
 <!--	CSS		-->
 	<link rel="stylesheet" href="mycss/javas.css" type="text/css"/>
@@ -21,6 +22,7 @@
 	<script type="text/javascript" src="js/watch.js"></script>
 	<script type="text/javascript" src="js/check.js"></script>
 	<script type="text/javascript" src="js/do.js"></script>
+	<script type="text/javascript" src="js/slider.js"></script>
 
 	<!--	JQuery		-->
 <script src="js/jquery.js"></script>
@@ -45,7 +47,7 @@
 
 
 <!--	BODY	-->
-<body onload="count();">
+<body onload="count(); slider();">
 
 <!--	HEADER	-->
 <header id="header">
@@ -92,6 +94,16 @@
 		<div id="numbers1"></div>
 		<div id="numbers2"></div>
 		<div id="numbers3"></div>
+	</div>
+
+</br></br>
+
+	<div>
+		<div id="slider"></div>
+		<div>
+			<span onclick="slide_choose(1)" class="slide_choose">[ 1 ]</span>
+			<span onclick="slide_choose(2)" class="slide_choose">[ 2 ]</span>
+		</div>
 	</div>
 </main>
 

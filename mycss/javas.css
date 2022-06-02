@@ -2,3 +2,21 @@
 {
 	text-align: center;
 }
+
+#slider
+{
+	height: 400px;
+}
+
+
+#slider img
+{
+	max-height: 400px;
+}
+
+.slide_choose
+{
+	cursor: pointer;
+	margin-left: 10px;
+	margin-right: 10px;
+}
