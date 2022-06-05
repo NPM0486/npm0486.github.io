@@ -50,36 +50,48 @@ a:hover
 	background-repeat: no-repeat;
 	background-position-x: center;
 	height: 700px;
+	position: relative;
+	z-index: 1;
 }
 
-.menu_space
-{
-	height: 100px;
-	margin: 0;
-	padding: 0;
-}
 .menu_button
 {
 	border: white solid 1px;
-	border-radius: 15px;
+	border-radius: 50%;
 
-	width: 150px;
-	height: 40px;
-	line-height: 40px;
+	width: 70px;
+	height: 70px;
+	line-height: 70px;
 	float: left;
 
 	padding: 0;
 	margin: 0;
-
-	margin-left: 20px;
-	margin-right: 20px;
 
 	background-color: #045757;
 	box-shadow: 0px 0px 25px 3px rgba(4, 67, 67, 0.9);
 	-moz-box-shadow: 0px 0px 25px 3px rgba(4, 67, 67, 0.9);
 	-webkit-box-shadow: 0px 0px 25px 3px rgba(4, 67, 67, 0.9);
 	transition: transform 0.2s ease-in-out;
+	position: relative;
 
+}
+
+.shadow
+{
+	position: absolute;
+
+	bottom: 0;
+	left: 0;
+
+	border-radius: 50%;
+
+	transform: translate(0,50% );
+
+	width: 100%;
+	height: 30px;
+
+	background-color: rgba(0, 0, 0, 0.5);
+	z-index: -1;
 }
 
 .menu_button:hover
@@ -121,6 +133,25 @@ a:hover
 	position: fixed;
 	height: 55px;
 	background-color: #1a1a1d;
+}
+
+.orbita
+{
+	position: absolute;
+	left: 25%;
+	bottom: calc(100%-550px);
+	width: 50%;
+	height: 250px;
+	border: red solid 5px;
+	border-radius: 50%;
+	
+}
+
+#main
+{
+	position: absolute;
+	top: 550px;
+	left: 50%;
 }
 
 /*	Footer	*/

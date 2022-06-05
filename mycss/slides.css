@@ -1,6 +1,3 @@
-/*	ID	*/
-
-
 #slides
 {
 	width: 880px;
@@ -10,29 +7,9 @@
 	background-color: #333538;
 }
 
-
-
-/*	CLASS	*/
-
-.header
-{
-	text-align: center;
-	font-weight: 900;
-}
-
-.icon
-{
-	font-size: 40px;
-}
-
 .lorem
 {
 	max-width: 1000px;
 	margin-left: auto;
 	margin-right: auto;
 }
-
-
-
-
-
