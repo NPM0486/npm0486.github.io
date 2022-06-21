@@ -8,8 +8,10 @@ $(document).ready(function() {
 		  
 	if (ScrollY > NavY) { 
 		$('.menu_animation').addClass('sticky');
+		$('.menu a:nth-child(1)').addClass('menu_sticky');
 	} else {
 		$('.menu_animation').removeClass('sticky'); 
+		$('.menu a:nth-child(1)').removeClass('menu_sticky'); 
 	}
 	};
 	 

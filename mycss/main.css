@@ -1,9 +1,19 @@
 /* MAIN */
-
+*
+{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
 *::selection
 {
 	color: white;
 	background: darkcyan;
+}
+
+.flexy
+{
+	display: flex;
 }
 
 body
@@ -12,8 +22,6 @@ body
 	font-family: 'Nunito', sans-serif;
 	font-size: 20px;
 	color: white;
-	margin: 0px !important;
-	padding: 0px !important;
 }
 
 h1
@@ -43,15 +51,35 @@ a:hover
 
 
 /*	Header	*/
+#net
+{
+height: 700px;
+position: absolute;
+margin-left: auto;
+margin-right: auto;
+left: 0;
+right: 0;
+top: 0px;
+text-align: center;
+z-index: 1;
+}
 
 #header
 {
-	background-image: url(https://github.com/NPM0486/npm0486.github.io/blob/main/img/menu.png?raw=true);
-	background-repeat: no-repeat;
-	background-position-x: center;
 	height: 700px;
 	position: relative;
 	z-index: 1;
+}
+header > h1
+{
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+	top: 0px;
+	text-align: center;
+	position: absolute;
+	z-index: 2;
 }
 
 .menu_button
@@ -74,6 +102,8 @@ a:hover
 	transition: transform 0.2s ease-in-out;
 	position: relative;
 
+	z-index: 10;
+
 }
 
 .menu_button:hover
@@ -95,45 +125,215 @@ a:hover
 	color: black;
 }
 
-.menu
-{
-	display: inline-block;
-}
-
-.menu_animation
-{
-	transition: all 0.3s ease-in-out;
-}
-
-.sticky
-{
-	width: 100%;
-	left: 0;
-	top: 0;
-	padding-top: 10px;
-	z-index: 100;
-	position: fixed;
-	height: 55px;
-	background-color: #1a1a1d;
-}
-
 .orbita
 {
-	position: absolute;
-	left: 25%;
-	bottom: calc(100%-550px);
-	width: 50%;
-	height: 250px;
-	border: #044343 solid 5px;
+	width: 54%;
+	height: 800px;
+
+	border: #045757 solid 40px;
 	border-radius: 50%;
-	
+
+	z-index: -1;
+
+	position: absolute;
+  	top: 0px;
+	left: 22%;
+
+	transform: perspective(900px) rotateX(80deg);
 }
 
-#main
+.universe2 .stared2:nth-child(1)
+{
+	top: 50%;
+	left: 25%;
+}
+
+.universe2 .stared2:nth-child(2)
+{
+	top: 5%;
+	left: 60%;
+}
+
+.universe2 .stared2:nth-child(3)
+{
+	top: 8%;
+	left: 44%;
+}
+
+.universe2 .stared2:nth-child(4)
+{
+	top: 8%;
+	left: 10%;
+}
+
+.universe2 .stared2:nth-child(5)
+{
+	top: 20%;
+	left: 22%;
+}
+
+.universe2 .stared2:nth-child(6)
+{
+	top: 35%;
+	left: 12%;
+}
+
+.universe2 .stared2:nth-child(7)
+{
+	top: 45%;
+	left: 82%;
+}
+
+.universe2 .stared2:nth-child(8)
+{
+	top: 35%;
+	left: 12%;
+}
+
+.universe2 .stared2:nth-child(9)
+{
+	top: 29%;
+	left: 68%;
+}
+
+.universe2 .stared2:nth-child(10)
+{
+	top: 15%;
+	left: 74%;
+}
+
+.universe2 .stared2:nth-child(11)
+{
+	top: 25%;
+	left: 1%;
+}
+
+.universe2 .stared2:nth-child(12)
+{
+	top: 30%;
+	left: 30%;
+}
+
+.universe2 .stared2:nth-child(13)
+{
+	top: 60%;
+	left: 10%;
+}
+
+.universe2 .stared2:nth-child(14)
+{
+	top: 3%;
+	left: 30%;
+}
+
+.universe2 .stared2:nth-child(15)
+{
+	top: 23%;
+	left: 88%;
+}
+
+.universe2 .stared2:nth-child(16)
+{
+	top: 68%;
+	left: 88%;
+}
+
+.universe2 .stared2:nth-child(17)
+{
+	top: 50%;
+	left: 97%;
+}
+
+.universe2 .stared2:nth-child(18)
+{
+	top: 10%;
+	left: 92%;
+}
+
+.stared2
+{
+	animation: stars2 4s infinite linear;
+	position: absolute;
+}
+
+@keyframes stars2 
+{
+	0%{transform: scale(0.5);}	
+	10%{transform: scale(0.6);}	
+	20%{transform: scale(0.5);}	
+	30%{transform: scale(0.6);}	
+	40%{transform: scale(0.5);}	
+	50%{transform: scale(0.7);}	
+	60%{transform: scale(0.5);}	
+	70%{transform: scale(0.7);}	
+	100%{transform: scale(0.5);}	
+}
+
+.star2
+{
+	background-color: white;
+	border-radius: 50%;
+
+	transform: rotateX(80deg);
+
+	height: 20px;
+	width: 20px;
+
+	box-shadow: 0px 0px 10px 3px rgba(255, 255, 255, 1);
+}
+
+.star2::before
 {
 	position: absolute;
-	top: 550px;
-	left: 50%;
+	top: -40px;
+	left: -1px;
+
+	background-color: white;
+	border-radius: 50%;
+
+	transform: rotateY(80deg);
+
+	height: 100px;
+	width: 20px;
+
+	box-shadow: 0px 0px 25px 3px rgba(255, 255, 255, 1);
+
+	content: '';
+}
+
+.menu a:nth-child(1)
+{
+	position: absolute;
+	bottom: 25%;
+	left: 29%;
+}
+
+.menu a:nth-child(2)
+{
+	position: absolute;
+	bottom: 23%;
+	left: 38%;
+}
+
+.menu a:nth-child(3)
+{
+	position: absolute;
+	bottom: 22%;
+	left: 48%;
+}
+
+.menu a:nth-child(4)
+{
+	position: absolute;
+	bottom: 23%;
+	right: 38%;
+}
+
+.menu a:nth-child(5)
+{
+	position: absolute;
+	bottom: 25%;
+	right: 29%;
 }
 
 /*	Footer	*/

@@ -1,1 +1,69 @@
+.container
+{
+    position: relative;
+    overflow: hidden;
+    animation: colorfull 4s linear infinite;
+}
+
+@keyframes colorfull 
+{
+    0% {filter: hue-rotate(0deg);}
+    100% {filter: hue-rotate(360deg);}
+}
+
+.row
+{
+	display: inline-flex;
+	margin-top: -33px;
+	margin-left: -50px;
+}
+
+.row:nth-child(even)
+{
+	margin-left: 1px;
+}
+
+.hexagon2
+{
+    position: relative;
+    width: 100px;
+	height: 110px;
+	background: black;
+	margin: 1px;
+
+	clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+	transition: 2s;
+}
+
+.hexagon2:hover
+{
+	transition: 0s;
+	background: #0f0;
+}
+
+.hexagon2:after
+{
+	content: '';
+	position: absolute;
+	top: 4px; 
+	bottom: 4px;
+	left: 4px;
+	right: 4px;
+	background: #111;
+	clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+	z-index: 1;
+}
+.hexagon2:before
+{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 50%;
+	height: 100%;
+	background: rgba(255,255,255,0.02);
+	z-index: 2;
+}
+
+
 
