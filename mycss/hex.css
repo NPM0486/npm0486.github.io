@@ -3,6 +3,8 @@
     position: relative;
     overflow: hidden;
     animation: colorfull 4s linear infinite;
+    overflow: hidden;
+    height: 104vh;
 }
 
 @keyframes colorfull 
@@ -65,5 +67,34 @@
 	z-index: 2;
 }
 
+#michal
+{
+    position: fixed;
+    z-index: 20;
+    left: 50%;
+    margin-left: -100px;
+    width: 200px;
+    text-align: center;
+    top: 50px;
+}
 
+#michal a:hover
+{
+	color: black;
+}
 
+#michal2
+{
+    position: fixed;
+    z-index: 20;
+    left: 50%;
+    top: 10px;
+    margin-left: -115px;
+    width: 100px;
+    text-align: center;
+    text-shadow: 
+	2px 2px 0 #044343,
+	-2px -2px 0  #044343,
+	-2px -2px 0  #044343,
+	2px 2px 0  #044343;
+}
