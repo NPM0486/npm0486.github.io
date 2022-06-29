@@ -1,22 +1,22 @@
 Font license info
 
 
-## Web Symbols
+## Typicons
 
-   Copyright (c) 2011 by Just Be Nice studio. All rights reserved.
+   (c) Stephen Hutchings 2012
 
-   Author:    Just Be Nice studio
+   Author:    Stephen Hutchings
    License:   SIL (http://scripts.sil.org/OFL)
-   Homepage:  http://www.justbenicestudio.com/
+   Homepage:  http://typicons.com/
 
 
-## MFG Labs
+## Zocial
 
-   Copyright (C) 2012 by Daniel Bruce
+   Copyright (C) 2012 by Sam Collins
 
-   Author:    MFG Labs
-   License:   SIL (http://scripts.sil.org/OFL)
-   Homepage:  http://www.mfglabs.com/
+   Author:    Sam Collins
+   License:   MIT (http://opensource.org/licenses/mit-license.php)
+   Homepage:  http://zocial.smcllns.com/
 
 
 ## Font Awesome
