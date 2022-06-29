@@ -4,4 +4,8 @@ Order Allow,Deny
 </FilesMatch>
 
 RewriteEngine on
-RewriteRule javas javas.html
+RewriteRule about index.html
+RewriteRule skills skills.html
+RewriteRule cert cert.html
+RewriteRule contact contact.html
+RewriteRule hex hex.html
