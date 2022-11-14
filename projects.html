@@ -12,8 +12,8 @@
 	<meta name="author" content="Nikolas Papenfus"/>
 	<link rel="icon" href="img/icon.png">
 
-<!--	CSS		-->
-	<link rel="stylesheet" href="mycss/slides.css" type="text/css"/>
+<!--	CSS	    -->
+    <link rel="stylesheet" href="mycss/projects.css" type="text/css"/>
 	<link rel="stylesheet" href="mycss/main.css" type="text/css"/>
 
 <!--	GOOGLE FONT	-->
@@ -25,11 +25,8 @@
 <link rel="stylesheet" href="css/fontello.css" type="text/css" />
 
 <!--	JS		-->
-<!-- script from: https://www.youtube.com/watch?v=OcwON22ctYc-->
-<script type="text/javascript" src="js/copy.js"></script>
 <!--	JQuery		-->
 <script src="js/jquery.js"></script>
-<script src="js/stickynav.js"></script>
 </head>
 
 
@@ -72,35 +69,59 @@
 				</div>
 			</nav>
 	</header>
-<main>
-	<header>
-		<h2>>.Contact Me!</h2>
-	</header>
-	<article class="contacts">
-
-		<div class="contact" onclick="email()" onmouseout="out()">
-			<div class="glass"></div>
-			<div class="for"><i class="icon2 icon-mail-alt"></i><p id="email">nikolas.papenfus@wp.pl</p></div>
-			<span class="tooltiptext" id="myTooltip">Copy to clipboard</span>
-		</div>
-
-
-	<div class="contact">
-		<div class="glass"></div>
-		<a href="https://www.facebook.com/nikolas.wajchert/" target="_blank" title="my facebook"><div class="for"><i class="icon2 icon-facebook-squared"></i><p>Nikolas Papenfus</p></div></a>
-		<span class="tooltiptext">Go to my facebook</span>
-	</div>
-
-	<div class="contact" onclick="phone()" onmouseout="out2()">
-		<div class="glass"></div>
-		<div class="for"><i class="icon2 icon-phone-squared"></i><p>+48 603 475 010</p></div>
-		<span class="tooltiptext" id="myTooltip2">Copy to clipboard</span>
-	</div>
-	
-	</article>
-	<div style="height: 200px;"></div>
+<main id="container">
+    <!--	PROJ	-->
+	<div class="cont-proj">
+    	<div class="proj">
+        	<div class="top">
+				<div id="jubi">
+					<img src="img/logo-v3.png" height="100px" alt="Logo Jubileuszu ZS Polkowice"/>
+				</div>
+			</div>
+       		<div>
+          	  <span style="--i:0;" class="proj_title"></span>
+          	  <span style="--i:1;" class="proj_title"></span>
+          	  <span style="--i:2;" class="proj_title"></span>
+         	   <span style="--i:3;" class="proj_title"></br>My School Anniversary Website</span>
+       	 </div>
+    	</div>
+    </div>
+	<!--	PROJ	-->
+    <div class="cont-proj">
+    	<div class="proj">
+        	<div class="top">
+				<div id="compexpert">
+					<img src="img/compexpert_logo.png" height="80px" alt="Logo Jubileuszu ZS Polkowice"/>
+				</div>
+			</div>
+       		<div>
+          	  <span style="--i:0;" class="proj_title"></span>
+          	  <span style="--i:1;" class="proj_title"></span>
+          	  <span style="--i:2;" class="proj_title"></span>
+         	   <span style="--i:3;" class="proj_title"></br>CompExpert Website</span>
+       	 </div>
+    	</div>
+    </div>
+	<!--	PROJ	-->
+    <div class="cont-proj">
+    	<div class="proj">
+        	<div class="top">
+				<div id="webgiot">
+					<img src="img/webgiot_logo.png" height="100px" alt="Logo Jubileuszu ZS Polkowice"/>
+				</div>
+			</div>
+       		<div>
+          	  <span style="--i:0;" class="proj_title"></span>
+          	  <span style="--i:1;" class="proj_title"></span>
+          	  <span style="--i:2;" class="proj_title"></span>
+         	   <span style="--i:3;" class="proj_title"></br>WebGIoT Project Website</span>
+       	 </div>
+    	</div>
+    </div>
 </main>
     
+
+<div id="space"></div>
 <!--	FOOTER	-->
 <footer id="footer">
 	<figure id="footer_logo">

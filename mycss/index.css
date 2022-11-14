@@ -31,15 +31,13 @@
 .about
 {
 	width: 50%;
-	margin-left: 35%;
 	margin-bottom: 150px;
 	margin-top: 20px;
 	position: relative;
-	float: left;
 }
 .comp
 {
-	width: 50%;
+	width: 30%;
 	margin-left: 10%;
 	margin-bottom: 150px;
 	position: relative;
@@ -287,4 +285,9 @@ svg circle:nth-child(2)
 	3px 3px 0  #044343;
 	margin-top: 40px;
 	font-weight: 700;
+}
+
+#container
+{
+	display: flex;
 }

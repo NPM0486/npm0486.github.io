@@ -1,0 +1,6 @@
+/*
+#044343 - dark cyan
+#045757 - ligth cyan
+#202124 - background gray
+#1a1a1d - footer background gray
+*/
