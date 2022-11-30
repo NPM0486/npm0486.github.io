@@ -157,6 +157,27 @@
     }
 }
 
+#moodle
+{
+    animation: moodle 5s linear infinite;
+}
+
+@keyframes moodle
+{
+    0%
+    {
+        transform: rotateX(-90deg) rotateY(-90deg) translateX(0%) translateY(-50px);
+    }
+    50%
+    {
+        transform: rotateX(-90deg) rotateY(-90deg) translateX(0%) translateY(-70px);
+    }
+    100%
+    {
+        transform: rotateX(-90deg) rotateY(-90deg) translateX(0%) translateY(-50px);
+    }
+}
+
 .hexagon2
 {
     position: relative;

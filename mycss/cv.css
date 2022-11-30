@@ -1,0 +1,93 @@
+#cv_container
+{
+    width: 100%;
+    height: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#cv
+{
+    position: relative;
+    border: 1px white solid;
+    height: 1000px;
+    width: 70%;
+    box-shadow: 20px 20px 50px 0px rgb(17, 17, 17);
+
+    display: grid;
+    grid-template-columns: 33% 67%;
+    grid-template-rows: 100%;
+    grid-template-areas: 
+    "left right";
+}
+
+#cv_left
+{
+    grid-area: left;
+    background-color: #045757;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.profile_container
+{
+    width: 50%;
+    position: relative;
+}
+
+.profile
+{
+    border-radius: 50%;
+    border: 1px white solid;
+    width: 100%;
+}
+
+.left_text
+{
+    display: grid;
+    width: 80%;
+    font-size: 10pt;
+}
+
+#left_name
+{
+    font-size: 20pt;
+    font-weight: bold;
+    text-align: left;
+    text-transform: uppercase;
+    
+}
+
+#left_job
+{
+    text-transform: uppercase;
+    font-size: 13pt;
+}
+
+.left_title
+{
+    text-transform: uppercase;
+    font-size: 13pt;
+    font-weight: 600;
+}
+
+.certs
+{
+    font-size: 11pt;
+    font-weight: bold;
+}
+
+.space
+{
+    height: 200px;
+}
+
+.left_text p
+{
+    margin: 2px;
+}

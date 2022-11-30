@@ -348,25 +348,6 @@ header > h1
 	width: 100%;
 }
 
-#footer_city
-{
-	width: 100%;
-	height: 200px;
-	background-color: #202124;
-	border: red 1px solid;
-	display: flex;
-	align-items: space-between;
-}
-
-#left_city
-{
-	order: 1;
-	width: 100%;
-	height: 100%;
-	background-color: #044343;
-	clip-path: polygon(0% 100%, 0% 0%, 10% 0%, 10% 60%, 57% 60%, 57% 100%);
-}
-
 #footer_container
 {
 	min-height: 350px;
