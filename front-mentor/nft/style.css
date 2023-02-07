@@ -1,0 +1,225 @@
+.attribution 
+{ 
+    font-size: 20px; 
+    text-align: center; 
+    background-color: hsl(216, 50%, 16%);
+    color: hsl(215, 51%, 70%);
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-weight: 300;
+}
+
+.attribution a 
+{ 
+    color: #fff; 
+    text-decoration: none;
+    transition: all 0.5s ease-in-out;
+}
+
+.attribution a:hover
+{
+    color: hsl(178, 100%, 50%);
+}
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    font-family: 'Outfit', sans-serif;
+    background-color: hsl(217, 54%, 11%);  
+}
+
+.cardBx
+{
+    width: 100%;
+    height: calc(100vh - 100px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 500px) 
+{
+    .cardBx
+    {
+        transform: scale(0.8);
+    }
+}
+
+.cardBx .card
+{
+    width: 400px;
+    height: 650px;
+    background-color: hsl(216, 50%, 16%);
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cardBx .card .pic
+{
+    width: 85%;
+    height: 50%;
+    border-radius: 10px;
+    margin-top: calc(15% / 2);
+    position: relative;
+}
+
+.cardBx .card .overlay
+{
+    background-color: rgb(0, 255, 247, 0%);
+    width: 85%;
+    height: 50%;
+    border-radius: 10px;
+    margin-top: calc(15% / 2);
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.cardBx .card .overlay:hover
+{
+    background-color: rgb(0, 255, 247, 50%);
+}
+
+.cardBx .card .view
+{
+    opacity: 0%;
+    transition: all 0.5s ease-in-out;
+    position: absolute;
+    top: 25%;
+    width: 15%;
+}
+
+.cardBx .card .overlay:hover ~ .view
+{
+    opacity: 100%;
+}
+
+.cardBx .card .textBx
+{
+    width: 85%;
+}
+
+.cardBx .card .textBx h1
+{
+    color: #fff;
+    width: 60%;
+    font-weight: 600;
+    font-size: 1.5em;
+    margin-top: 25px;
+    transition: all 0.5s ease-in-out;
+}
+
+.cardBx .card .textBx h1:hover
+{
+    cursor: pointer;
+    color: hsl(178, 100%, 50%);
+}
+
+.cardBx .card .textBx .desc
+{
+    color: hsl(215, 51%, 70%);
+    font-size: 1.2em;
+    font-weight: 300;
+    margin-top: 25px;
+}
+
+.icons
+{
+    display: grid;
+    grid-template-columns: 65% 35%;
+    border: red 1px solid6;
+    grid-template-rows: 75px;
+    border-bottom: hsl(215, 32%, 27%) 1px solid;
+}
+
+.icons :nth-child(1)
+{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    position: relative;
+    font-size: 1.13em;
+}
+
+.icons :nth-child(1) img
+{
+    height: 25px;
+}
+
+.icons :nth-child(2)
+{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    position: relative;
+    font-size: 1em;
+}
+
+.icons :nth-child(2) img
+{
+    height: 25px;
+}
+
+.icons .eth
+{
+    color: hsl(178, 100%, 50%);
+    padding-left: 5%;
+    font-weight: 600;
+}
+
+.icons .time
+{
+    color: hsl(215, 51%, 70%);
+    padding-left: 5%;
+    font-weight: 400;
+}
+
+.author
+{
+    width: 85%;
+    height: 10%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    font-weight: 300;
+}
+
+.author span
+{
+    padding-left: 5%;
+    color: hsl(215, 51%, 70%);
+}
+
+.author span a
+{
+    color: #fff;
+    transition: all 0.5s ease-in-out;
+}
+
+.author span a:hover
+{
+    cursor: pointer;
+    color: hsl(178, 100%, 50%);
+}
+
+.author img
+{
+    border: 1px #fff solid;
+    border-radius: 50%;
+}
