@@ -1,0 +1,240 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    background-image: url(images/pattern-background-desktop.svg);
+    background-repeat: repeat-x;
+    background-size: auto 50%;
+    background-color: hsl(225, 100%, 94%);
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+.sumBx
+{
+    width: 100%;
+    height: calc(100vh - 100px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/*  MOBILE SUM  */
+@media (max-width: 500px) 
+{
+    .sumBx .sum
+    {
+        width: 90%;
+        height: 550px;
+        background-color: #fff;
+        border-radius: 20px;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+        overflow: hidden;
+        text-align: center;
+    }
+
+    .sumBx .sum .sumImg
+    {
+        width: 100%;
+        height: 30%;
+        background-image: url(images/illustration-hero.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .sumBx .sum .plan
+    {
+        width: 90%;
+        height: 15%;
+        border-radius: 15px;
+        margin-top: 5%;
+        background-color: hsl(225, 100%, 98%);
+        display: grid;
+        grid-template-columns: 20% 40% 40%;
+        align-items: center;
+    }
+
+    .sumBx .sum .sumBtn
+    {
+        width: 90%;
+        margin-top: 5%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+    }
+}
+
+/*  PC SUM  */
+@media (min-width: 500px)
+{
+    .sumBx .sum
+    {
+        width: 450px;
+        height: 650px;
+        background-color: #fff;
+        border-radius: 20px;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+        overflow: hidden;
+        text-align: center;
+    }    
+    
+    .sumBx .sum .sumImg
+    {
+        width: 100%;
+        height: 35%;
+        background-image: url(images/illustration-hero.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .sumBx .sum .plan
+    {
+        width: 80%;
+        height: 15%;
+        border-radius: 15px;
+        margin-top: 5%;
+        background-color: hsl(225, 100%, 98%);
+        display: grid;
+        grid-template-columns: 20% 40% 40%;
+        align-items: center;
+    }
+
+    .sumBx .sum .sumBtn
+    {
+        width: 80%;
+        margin-top: 5%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+    }
+}
+
+.sumBx .sum h1
+{
+    color: hsl(223, 47%, 23%);
+    font-size: 1.5em;
+    font-weight: 900;
+    margin-top: 10%;
+}
+
+.sumBx .sum p
+{
+    color: hsl(224, 23%, 55%);
+    font-weight: 500;
+    margin-top: 5%;
+}
+
+
+
+.sumBx .sum .plan img
+{
+    justify-self: center;
+    margin-left: 15%;
+}
+
+.sumBx .sum .plan .prize
+{
+    justify-self: start;
+    padding-left: 10%;
+}
+
+.sumBx .sum .plan .prize :nth-child(1)
+{
+    color: hsl(223, 47%, 23%);
+    font-weight: 700;
+}
+
+.sumBx .sum .plan a
+{
+    color: hsl(245, 75%, 52%);
+    text-decoration: underline;
+    font-weight: 700;
+    justify-self: end;
+    margin-right: 15%;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.sumBx .sum .plan a:hover
+{
+    color: #766cf1;
+    text-decoration: none;
+}
+
+
+
+.sumBx .sum .sumBtn .btnPay
+{
+    background-color: hsl(245, 75%, 52%);
+    color: #fff;
+    width: 100%;
+    height: 45px;
+    border-radius: 10px;
+    border: none;
+    font-weight: 900;
+    box-shadow: 0px 10px 40px 0px hsla(245, 75%, 52%, 0.5);
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.sumBx .sum .sumBtn .btnPay:hover
+{
+    background-color: #766cf1;
+}
+
+.sumBx .sum .sumBtn .btnCancel
+{
+    background-color: transparent;
+    color: hsl(224, 23%, 55%);
+    width: 100%;
+    height: 45px;
+    border: none;
+    font-weight: 900;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.sumBx .sum .sumBtn .btnCancel:hover
+{
+    color: hsl(223, 47%, 23%);
+}
+
+.attribution 
+{ 
+    font-size: 20px; 
+    text-align: center; 
+    background-color: #d6e1ff;
+    color: hsl(223, 47%, 23%);
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-weight: 300;
+}
+
+.attribution a 
+{ 
+    color: hsl(245, 75%, 52%); 
+    text-decoration: underline;
+    transition: all 0.5s ease-in-out;
+}
