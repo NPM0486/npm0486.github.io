@@ -1,0 +1,209 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*
+    font-family: 'Inter', sans-serif;
+    font-family: 'Lexend Deca', sans-serif;
+*/
+
+body
+{
+    background-color: hsl(233, 47%, 7%);
+}
+
+.cardBx
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*  MOBILE  */
+@media (max-width: 768px)
+{
+    .attribution 
+    {
+        margin-top: 10%;
+    }
+    .cardBx .card
+    {
+        margin-top: 10%;
+        flex-direction: column-reverse;
+        height: 800px;
+    }
+    .cardBx .card .leftCont
+    {
+        width: 100%;
+        height: 100%;
+        text-align: center;
+    }
+    .cardBx .card .rightCont
+    {
+        width: 100%;
+        height: 400px;
+        background-image: url(images/image-header-mobile.jpg);
+        background-size: cover;
+    }
+
+    .cardBx .card .leftCont .stats
+    {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        height: 50%;
+        justify-self: end;
+        margin-top: 10%;
+    }
+
+    .cardBx .card .leftCont .textBx h1
+    {
+        font-size: 1.8em;
+    }
+
+    .cardBx .card .leftCont .textBx
+    {
+        width: 90%;
+        align-self: center;
+    }
+}
+
+/*  PC  */
+@media (min-width: 768px)
+{
+    .cardBx
+    {
+        height: calc(100vh - 100px);
+    }
+    .cardBx .card
+    {
+        height: 400px;
+    }
+    .cardBx .card .leftCont
+    {
+        width: 50%;
+        height: 100%;
+    }
+    .cardBx .card .rightCont
+    {
+        width: 50%;
+        height: 100%;
+        background-image: url(images/image-header-desktop.jpg);
+        background-size: cover;
+    }
+
+    .cardBx .card .leftCont .stats
+    {
+        display: flex;
+        justify-content: space-between;
+        height: 50%;
+        align-items: end;
+    }
+
+    .cardBx .card .leftCont .textBx h1
+    {
+        font-size: 2em;
+    }
+}
+
+.cardBx .card
+{
+    width: 90%;
+    max-width: 1000px;
+    
+    background-color: hsl(244, 38%, 16%);
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+
+    display: flex;
+
+    box-shadow: 0 0 10px hsla(0, 0%, 0%, 0.5);
+}
+
+.cardBx .card .leftCont
+{
+    padding: 5%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.cardBx .card .leftCont .textBx h1
+{
+    font-family: 'Inter', sans-serif;
+    color: #fff; 
+    font-weight: 700;
+    margin-bottom: 5%;
+}
+
+.cardBx .card .leftCont .textBx h1 span
+{
+    color: hsl(277, 64%, 61%);
+}
+
+.cardBx .card .leftCont .textBx p
+{
+    font-family: 'Inter', sans-serif;
+    color: hsla(0, 0%, 100%, 0.75);
+    font-size: 0.8em;
+    margin-bottom: 3%;
+    font-weight: 400;
+}
+
+.cardBx .card .leftCont .stats .stat h1
+{
+    color: #fff;
+    font-size: 1.5em;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+}
+
+.cardBx .card .leftCont .stats .stat p
+{
+    color: hsla(0, 0%, 100%, 0.6);
+    font-size: 0.7em;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-top: 5%;
+}
+
+.cardBx .card .rightCont
+{
+    position: relative;
+}
+
+.cardBx .card .overlay
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: hsla(277, 87%, 31%, 0.5);
+}
+
+.attribution 
+{ 
+    font-size: 20px; 
+    text-align: center; 
+    background-color: hsl(244, 38%, 16%);
+    color: #fff;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-weight: 700;
+}
+
+.attribution a 
+{ 
+    color: hsl(277, 64%, 61%); 
+    font-weight: 400;
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+}
