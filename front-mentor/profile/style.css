@@ -25,7 +25,7 @@ body
     width: 65vw;
     height: 100%;
 
-    background-image: url(/images/bg-pattern-top.svg);
+    background-image: url(images/bg-pattern-top.svg);
     background-repeat: no-repeat;
     background-position: right bottom;
     background-size: cover;
@@ -41,7 +41,7 @@ body
     width: 65vw;
     height: 100%;
 
-    background-image: url(/images/bg-pattern-bottom.svg);
+    background-image: url(images/bg-pattern-bottom.svg);
     background-repeat: no-repeat;
     background-position: left top;
     background-size: cover;
