@@ -18,58 +18,186 @@ body
 
 .gridBx
 {
-    height: 100vh;
+    min-height: 100vh;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+@media (min-width: 1400px)
+{
+    .gridBx .grid
+    {
+        width: 75%;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .gridBx .grid .gridItem:nth-child(1)
+    {
+        grid-column: span 2;
+    }
+
+    .gridBx .grid .gridItem:nth-child(3)
+    {
+        grid-row: span 2;
+    }
+    
+}
+
+@media (max-width: 1400px) and  (min-width: 1000px)
+{
+    .gridBx .grid
+    {
+        width: 75%;
+        grid-template-columns: repeat(3, 1fr);
+        margin: 10% 0;
+    }
+
+    .gridBx .grid .gridItem:nth-child(4)
+    {
+        grid-column: span 2;
+    }
+
+    .gridBx .grid .gridItem:nth-child(1)
+    {
+        grid-column: span 2;
+    }
+
+    .gridBx .grid .gridItem:nth-child(3)
+    {
+        grid-row: span 2;
+    }
+}
+
+@media (max-width: 1000px) and  (min-width: 500px)
+{
+    .gridBx .grid
+    {
+        width: 90%;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 10% 0;
+    }
+
+    .gridBx .grid .gridItem:nth-child(1)
+    {
+        grid-column: span 2;
+    }
+
+    .gridBx .grid .gridItem:nth-child(3)
+    {
+        grid-row: span 2;
+    }
+}
+
+@media (max-width: 500px)
+{
+    .gridBx .grid
+    {
+        width: 90%;
+        grid-template-columns: 100%;
+        margin: 10% 0;
+    }
+
+    .gridBx .grid .gridItem:nth-child(1)
+    {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .gridBx .grid .gridItem:nth-child(2)
+    {
+        grid-row: 2;
+    }
+
+    .gridBx .grid .gridItem:nth-child(4)
+    {
+        grid-row: 3;
+    }
+
+    .gridBx .grid .gridItem:nth-child(3)
+    {
+        grid-row: 5;
+    }
+}
+
 .gridBx .grid
 {
     display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
-    grid-template-rows: 50% 50%;
-    height: 700px;
-    width: 80%;
+    gap: 2.5em;
 }
 
 .gridBx .grid .gridItem
 {
     border-radius: 10px;
-    margin: 15px;
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
     flex-direction: column;
+    position: relative;
 }
 
 .gridBx .grid .gridItem:nth-child(1)
 {
     background-color: hsl(263, 55%, 52%);
-    grid-column: span 2;
     color: hsl(0, 0%, 100%);
+}
+
+.gridBx .grid .gridItem:nth-child(1) .profile img
+{
+    border: #a775f1 2px solid;
 }
 
 .gridBx .grid .gridItem:nth-child(2)
 {
     background-color: hsl(217, 19%, 35%);
+    color: hsl(0, 0%, 100%);
+}
+
+.gridBx .grid .gridItem:nth-child(2) .profile img
+{
+    border: #fff 2px solid;
 }
 
 .gridBx .grid .gridItem:nth-child(3)
 {
     background-color: hsl(0, 0%, 100%);
-    grid-row: span 2;
+    color: hsl(217, 19%, 35%);
+}
+
+.gridBx .grid .gridItem:nth-child(3) .profile img
+{
+    border: #fff 2px solid;
 }
 
 .gridBx .grid .gridItem:nth-child(4)
 {
     background-color: hsl(0, 0%, 100%);
+    color: hsl(217, 19%, 35%);
+}
+
+.gridBx .grid .gridItem:nth-child(4) .profile img
+{
+    border: #fff 2px solid;
 }
 
 .gridBx .grid .gridItem:nth-child(5)
 {
     background-color: hsl(219, 29%, 14%);
     grid-column: span 2;
+    color: hsl(0, 0%, 100%);
+}
+
+.gridBx .grid .gridItem:nth-child(5) .profile img
+{
+    border: #a775f1 2px solid;
+}
+
+.gridBx .grid .gridItem .icon
+{
+    position: absolute;
+    right: 15%;
+    z-index: 1;
 }
 
 .gridBx .grid .gridItem .inside
@@ -78,7 +206,8 @@ body
     flex-direction: column;
     width: 100%;
     height: 100%;
-    padding: 5%;
+    padding: 2.2em;
+    z-index: 2;
 }
 
 .gridBx .grid .gridItem .profile
@@ -92,17 +221,47 @@ body
     width: 3em;
     height: 3em;
     border-radius: 50%;
-    border: #a775f1 2px solid;
 }
 
 .gridBx .grid .gridItem .profile .profileInfo
 {
-    margin-left: 4%;
-    font-weight: 500;
+    margin-left: 1.5em;
+    font-size: 1em;
+}
+
+.gridBx .grid .gridItem .profile .profileInfo span
+{ 
+    font-weight: 600;
     font-size: 1em;
 }
 
 .gridBx .grid .gridItem .profile .profileInfo p
 {
     opacity: 0.5;
+    font-weight: 500;
+}
+
+.gridBx .grid .gridItem .quote
+{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+}
+
+.gridBx .grid .gridItem .quote h1
+{
+    margin-top: 0.5em;
+    font-size: 1.5em;
+    font-weight: 600;
+    line-height: 1.5em;
+}
+
+.gridBx .grid .gridItem .quote p
+{
+    margin-top: 0.5em;
+    font-size: 1em;
+    font-weight: 500;
+    line-height: 1.5em;
+    opacity: 0.7;
 }
