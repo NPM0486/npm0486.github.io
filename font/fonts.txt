@@ -1,9 +1,0 @@
-<i class="icon-attention"</i>
-
-<i class="icon-mail"></i>
-
-<i class="icon-github-circled"></i>
-
-<i class="icon-telegram"></i>
-
-<i class="icon-facebook-rect"></i>
