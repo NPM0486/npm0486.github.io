@@ -18,7 +18,7 @@ body
 
 .gridBx
 {
-    min-height: 100vh;
+    min-height: calc(100vh - 100px);
     width: 100%;
     display: flex;
     justify-content: center;
@@ -264,4 +264,30 @@ body
     font-weight: 500;
     line-height: 1.5em;
     opacity: 0.7;
+}
+
+.attribution 
+{ 
+    font-size: 20px; 
+    text-align: center; 
+    background-color: hsl(219, 29%, 14%);
+    color: hsl(263, 55%, 52%);
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-weight: 300;
+}
+
+.attribution a 
+{ 
+    color: #fff; 
+    text-decoration: none;
+    transition: all 0.5s ease-in-out;
+}
+
+.attribution a:hover
+{
+    color: hsl(217, 19%, 35%);
 }
