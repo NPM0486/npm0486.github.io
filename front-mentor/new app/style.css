@@ -1,0 +1,285 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    font-size: 16px;
+    font-family: 'Rubik', sans-serif;
+}
+
+main
+{
+    width: 100%;
+    min-height: 100vh;
+}
+
+.blob
+{
+    background: linear-gradient(190deg, hsl(293, 100%, 63%) 0%, hsl(264, 100%, 61%) 80%);
+    width: 600px;
+    height: 85%;
+
+    border-bottom-left-radius: 500px;
+    border-bottom-right-radius: 500px;
+    position: absolute;
+    z-index: -1;
+}
+
+.blob-top
+{
+    transform: translateX(-20%);
+}
+
+.blob-bottom
+{
+    transform: rotate(180deg) translateX(-40%);
+    bottom: 0;
+    right: 0;
+    opacity: 10%;
+}
+
+.grid-layout
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+    min-height: 100vh;
+    height: 100%;
+    width: 100%;
+    gap: 0 15%;
+    overflow: hidden;
+}
+
+.mobile
+{
+    background-color: #fff;
+    width: 280px;
+    height: 550px;
+    border-radius: 2.5rem;
+
+    justify-self: right;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+
+    border: red 1px solid;
+}
+
+.mobile::before
+{
+    content: '';
+    width: 50%;
+    height: 2rem;
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    z-index: 2;
+}
+
+
+.mobile-content
+{
+    height: 100%;
+    max-height: 97%;
+    width: 94%;
+    border-radius: 2.5rem;
+
+    background-color: hsl(270, 20%, 96%);
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+    overflow: hidden;
+
+    position: relative;
+}
+
+.mobile-content .profileBx
+{
+    height: 14%;
+    width: 100%;
+    background: linear-gradient(90deg, hsl(264, 100%, 61%) 0%, hsl(293, 100%, 63%) 100%);
+
+    border-radius: 1rem;
+    position: relative;
+}
+
+.mobile-content .profileBx .profile
+{
+    padding: 4%;
+    position: absolute;
+    bottom: 0;
+    color: #fff;
+
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.mobile-content .profileBx .profile .arrow-icon
+{
+    font-size: 0.8rem;
+    padding: 0 0.5rem;
+}
+
+.mobile-content .profileBx .profile .avatar
+{
+    border-radius: 50%;
+    border: 1px #fff solid;
+    height: 1.8rem;
+}
+
+.mobile-content .profileBx .profile .profileInfo
+{
+    padding: 0 0.5rem;
+}
+
+.mobile-content .profileBx .profile .profileInfo h2
+{
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.mobile-content .profileBx .profile .profileInfo p
+{
+    font-size: 0.6rem;
+    font-weight: 400;
+    color: hsl(276, 100%, 81%);
+}
+
+.mobile-content .profileBx .profile .dots-icon
+{
+    font-size: 0.8rem;
+    position: absolute;
+    right: 5%;
+}
+
+.mobile-content .messBx
+{
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+}
+
+.mobile-content .messBx .mess
+{
+    max-width: 60%;
+    height: auto;
+    list-style: none;
+    margin: 5px 0;
+    font-size: 0.6rem;
+}
+
+.mobile-content .in 
+{
+    align-self: end;
+    padding: 10px 10px;
+    border-radius: 0.8rem;
+    border-bottom-right-radius: 5px;
+    background-color: #fff;
+    color: hsl(271, 15%, 43%);
+}
+
+.mobile-content .out
+{
+    align-self: start;
+    padding: 10px 10px;
+    border-radius: 0.8rem;
+    border-bottom-left-radius: 5px;
+    background-color: hsl(272, 46%, 93%);
+    color: hsl(276, 55%, 52%);
+}
+
+.in-img
+{
+    align-self: end;
+}
+
+.mobile-content .in-img img
+{
+    height: 3rem;
+    border-radius: 10px;
+}
+
+.option
+{
+    display: flex;
+    align-items: center;
+    max-width: 70% !important;
+    width: 70%;
+    position: relative;
+    color: #fff !important;
+    background: linear-gradient(90deg, hsl(293, 100%, 63%) 0%, hsl(264, 100%, 61%) 100%);
+}
+
+.option label
+{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.option input
+{
+    appearance: none;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    opacity: 0.5;
+}
+
+.option p
+{
+    opacity: 0.5;
+    margin: 0 5%;
+}
+
+.option span
+{
+    position: absolute;
+    font-size: 0.9rem;
+    font-weight: 700;
+    right: 10%;
+}
+
+.option input::before
+{
+    content: '';
+    width: 0.6rem;
+    height: 0.6rem;
+    border-radius: 50%;
+    background-color: #fff;
+    transform: scale(0);
+    transition: 0.3s;
+}
+
+.option input:checked::before
+{
+    transform: scale(1);
+}
+
+.option input:checked
+{
+    opacity: 1 !important;
+}
+
+.option input:checked ~ p
+{
+    opacity: 1;
+}
