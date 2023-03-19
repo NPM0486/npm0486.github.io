@@ -123,6 +123,8 @@ main
     justify-content: center;
 
     position: relative;
+
+    box-shadow: #ebebeb 10px 10px 10px 0;
 }
 
 .mobile::before
@@ -296,13 +298,13 @@ main
     opacity: 0.5;
 }
 
-.option p
+.option .inside
 {
     opacity: 0.5;
     margin: 0 5%;
 }
 
-.option span
+.option .outside
 {
     position: absolute;
     font-size: 0.9rem;
