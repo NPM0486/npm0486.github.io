@@ -1,0 +1,434 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    color: hsl(192, 100%, 9%);
+}
+
+h1, h2, h3, h4, h5, h6
+{
+    font-family: 'Poppins', sans-serif;
+}
+
+span, p
+{
+    font-family: 'Open Sans', sans-serif;
+}
+
+/*  MAIN HEADER   */
+
+@media (min-width: 768px)
+{
+    .main-header
+    {
+        padding: 2rem 5%;
+    }
+}
+
+@media (max-width: 768px)
+{
+    .main-header
+    {
+        padding: 5%;
+    }
+}
+
+.main-header
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-header img
+{
+    height: 1.5rem;
+}
+
+.main-header div
+{
+    color: hsl(321, 100%, 78%);
+    border: hsl(321, 100%, 78%) 1px solid;
+    border-radius: 1.5rem;
+    width: 7rem;
+    text-align: center;
+    line-height: 1.5rem;
+    font-size: 0.8rem;
+    font-weight: 600;
+    box-shadow: 0 0 5px 0 hsl(321, 100%, 78%);
+}
+
+/*  ABOUT   */
+
+@media (min-width: 768px)
+{
+    .about
+    {
+        padding: 0%;
+    }
+
+    .about h2
+    {
+        margin-top: 5rem;
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 768px)
+{
+    .about
+    {
+        padding: 10%;
+    }
+
+    .about h2
+    {
+        margin-top: 25%;
+        font-size: 1.5rem;
+    }
+}
+
+.about
+{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.about h2
+{
+
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+.about p
+{
+    font-weight: 600;
+    opacity: 0.8;
+    max-width: 30rem;
+}
+
+.about div
+{
+    background-color: hsl(322, 100%, 66%);
+    color: #fff;
+    height: 3rem;
+    width: 80%;
+    max-width: 20rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1.5rem;
+    margin-top: 3rem;
+    box-shadow: 0 0 10px 0 hsl(321, 100%, 78%);
+}
+
+.about div p
+{
+    opacity: 1;
+}
+
+.about .smaller-margin
+{
+    margin-top: 1rem;
+}
+
+/*  PREV    */
+
+@media (min-width: 768px)
+{
+    .grid-prev
+    {
+        display: grid;
+        align-items: center;
+        justify-items: center;
+        width: 100%;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+}
+
+@media (max-width: 768px)
+{
+    .grid-prev
+    {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+}
+
+.prev
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.prev img
+{
+    width: 90%;
+    max-width: 1000px;
+    margin-top: 4rem;
+}
+
+.community
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: fit-content;
+}
+
+.community img
+{
+    height: 2rem;
+    width: 2rem;
+    align-self: start;
+}
+
+.community h3
+{
+    font-size: 4rem;
+}
+
+.community p
+{
+    opacity: 0.8;
+}
+
+/*  BLOB SECTION    */
+@media (min-width: 768px)
+{
+    .bg-top
+    {
+        content: url(images/bg-section-top-desktop-1.svg);
+    }
+
+    .with-blob
+    {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 0 10%;
+    }
+
+    .with-blob div
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .with-blob p
+    {
+        width: 90%;
+        margin: 5% 0;
+    }
+
+    .with-blob img
+    {
+        width: 90%;
+        margin: 0;
+    }
+
+    .bg-bottom
+    {
+        content: url(images/bg-section-bottom-desktop-1.svg);
+        margin-bottom: 10%;
+    }
+}
+
+@media (max-width: 768px)
+{
+    .bg-top
+    {
+        content: url(images/bg-section-top-mobile-1.svg);
+    }
+
+    .with-blob
+    {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .with-blob div
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .with-blob p
+    {
+        width: 80%;
+        margin: 5% 0;
+    }
+
+    .with-blob img
+    {
+        width: 90%;
+        margin: 20% 0;
+    }
+
+    .bg-bottom
+    {
+        content: url(images/bg-section-bottom-mobile-1.svg);
+    }
+}
+
+.bg-top
+{
+    height: auto;
+    width: 100%;
+}
+
+.with-blob
+{
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(207, 100%, 98%);
+    position: relative;
+}
+
+.with-blob h4
+{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.bg-bottom
+{
+    
+    height: auto;
+    width: 100%;
+}
+
+.no-blob
+{
+    background-color: #fff;
+}
+
+.bg-top-2
+{
+    content: url(images/bg-section-top-mobile-2.svg);
+    height: auto;
+    width: 100%;
+}
+
+.bg-bottom-2
+{
+    content: url(images/bg-section-bottom-mobile-2.svg);
+    height: auto;
+    width: 100%;
+}
+
+/*  FOOTER  */
+.bg-footer
+{
+    content: url(images/bg-footer-top-mobile.svg);
+    height: auto;
+    width: 100%;
+}
+
+footer
+{
+    background-color: hsl(192, 100%, 9%);
+    color: #fff;
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+}
+
+footer h5
+{
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+footer p
+{
+    font-size: 0.95rem;
+    opacity: 0.8;
+    margin-bottom: 1rem;
+}
+
+footer input
+{
+    width: 100%;
+    height: 2rem;
+    border: none;
+    border-radius: 10px;
+    padding: 0 1rem;
+    margin-bottom: 1rem;
+}
+
+footer .sub
+{
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+footer .sub p
+{
+    background-color: hsl(322, 100%, 66%);
+    color: #fff;
+    width: 50%;
+    text-align: center;
+    line-height: 3rem;
+    border-radius: 10px;
+}
+
+footer .alt
+{
+    filter: invert(100%) sepia(100%) saturate(1%) hue-rotate(152deg) brightness(200%) contrast(102%);
+    width: 60%;
+    margin-top: 20%;
+    margin-bottom: 5%;
+}
+
+footer .contact
+{
+    margin: 10% 0;
+}
+
+footer .contact div
+{
+    display: flex;
+    align-items: center;
+    height: 1.2rem;
+    margin: 1rem 0;
+}
+
+footer .contact div img
+{
+    height: 1rem;
+}
+
+footer .contact div span
+{
+    opacity: 0.7;
+    margin-left: 5%;
+    line-height: 1rem;
+}
+
+footer .social
+{
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+    font-size: 2rem;
+}
+
+

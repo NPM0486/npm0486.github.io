@@ -1,0 +1,252 @@
+*
+{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body
+{
+    font-family: 'Hanken Grotesk', sans-serif;
+    min-height: 100vh;
+    font-size: 18px;
+}
+
+@media (min-width: 768px)
+{
+    .center-layout
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: calc(100vh - 100px);
+    }
+
+    main
+    {
+        grid-template-columns: 1fr 1fr;
+        max-width: 600px;
+        height: 400px;
+        box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.1);
+        border-radius: 2rem;
+    }
+
+    .top
+    {
+        border-radius: 2rem;
+    }
+
+    .top .circle
+    {
+        min-width: 10rem;
+    }
+
+    .bottom
+    {
+        gap: 1rem;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 2fr;
+        height: 400px;
+    }
+
+    .bottom .stats-container
+    {
+        max-height: 3rem;
+    }
+}
+
+@media (max-width: 768px)
+{
+    main
+    {
+        grid-template-rows: 4fr 6fr;
+        min-height: 100vh;
+    }
+
+    .bottom
+    {
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+}
+
+main
+{
+    display: grid;
+    width: 100%;
+    overflow: hidden;
+}
+
+/*  TOP */
+.top
+{
+    border-bottom-right-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(241, 81%, 54%);
+    background: linear-gradient(360deg, hsl(241, 81%, 54%) 0%, hsla(252, 100%, 67%) 100%);
+    color: #fff;
+    text-align: center;
+    padding: 1.5rem 12%;
+    
+}
+
+.top span
+{
+    opacity: 0.5;
+    font-weight: 500;
+}
+
+.top .circle
+{
+    width: 50%;
+    aspect-ratio: 1/1;
+    max-width: 15rem;
+    border-radius: 50%;
+    background: linear-gradient(180deg, hsla(256, 72%, 46%, 1) 0%, hsla(241, 72%, 46%, 0) 100%);
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 1rem 0;
+}
+
+.top .circle h2
+{
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.top .circle span
+{
+    font-weight: 500;
+    opacity: 0.5;
+    margin-top: 0.1rem;
+}
+
+.top h3
+{
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.top p
+{
+    opacity: 0.75;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+/* BOTTOM */
+
+.bottom
+{
+    display: grid;
+    padding: 0 5%;
+    align-items: center;
+}
+
+.bottom .stats-container
+{
+    display: flex;
+    height: 4rem;
+    align-items: center;
+    border-radius: 10px;
+    font-weight: 600;
+    padding: 0 1rem;
+    justify-content: space-between;
+}
+
+.bottom h4
+{
+    padding-top: 0.5rem;
+}
+
+.bottom .stats-container div
+{
+    display: flex;
+    align-items: center;
+}
+
+.bottom .stats-container div span
+{
+    margin-left: 0.5rem;
+}
+
+.bottom .stats-container p
+{
+    opacity: 0.8;
+    color: black !important;
+}
+
+.bottom .stats-container p span
+{
+    opacity: 0.5;
+}
+
+.rec
+{
+    color: hsl(0, 100%, 67%) !important;
+    background-color: hsla(0, 100%, 67%, 0.1);
+}
+
+.mem
+{
+    color: hsl(39, 100%, 56%);
+    background-color: hsl(39, 100%, 56%, 0.1);
+}
+
+.ver
+{
+    color: hsl(166, 100%, 37%);
+    background-color: hsla(166, 100%, 37%, 0.1);
+}
+
+.vis
+{
+    color: hsl(234, 85%, 45%);
+    background-color: hsla(234, 85%, 45%, 0.1);
+}
+
+.button
+{
+    color: #fff;
+    background-color: hsl(224, 30%, 27%);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3rem;
+    border-radius: 1.5rem;
+    cursor: pointer;
+}
+
+.button:hover
+{
+    background: linear-gradient(360deg, hsl(241, 81%, 54%) 0%, hsla(252, 100%, 67%) 100%);
+}
+
+.attribution 
+{ 
+    font-size: 20px; 
+    text-align: center; 
+    background: linear-gradient(360deg, hsl(241, 81%, 54%) 0%, hsla(252, 100%, 67%) 100%);
+    color: #fff;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-weight: 700;
+}
+
+.attribution a 
+{ 
+    color: #fff; 
+    font-weight: 400;
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+}
