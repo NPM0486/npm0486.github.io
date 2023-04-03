@@ -212,6 +212,7 @@ span, p
     .bg-top
     {
         content: url(images/bg-section-top-desktop-1.svg);
+        margin-top: 5rem;
     }
 
     .with-blob
@@ -226,6 +227,8 @@ span, p
         display: flex;
         flex-direction: column;
         align-items: start;
+        grid-column: 1;
+        grid-row: 1;
     }
 
     .with-blob p
@@ -238,12 +241,37 @@ span, p
     {
         width: 90%;
         margin: 0;
+        grid-column: 2;
+        grid-row: 1;
     }
 
     .bg-bottom
     {
         content: url(images/bg-section-bottom-desktop-1.svg);
         margin-bottom: 10%;
+    }
+
+    .bg-top-2
+    {
+        content: url(images/bg-section-top-desktop-2.svg);
+        margin-top: 5rem;
+    }
+
+    .bg-bottom-2
+    {
+        content: url(images/bg-section-bottom-desktop-2.svg);
+    }
+
+    #reverse div
+    {
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    #reverse img
+    {
+        grid-column: 1;
+        grid-row: 1;
     }
 }
 
@@ -284,6 +312,16 @@ span, p
     {
         content: url(images/bg-section-bottom-mobile-1.svg);
     }
+
+    .bg-top-2
+    {
+        content: url(images/bg-section-top-mobile-2.svg);
+    }
+
+    .bg-bottom-2
+    {
+        content: url(images/bg-section-bottom-mobile-2.svg);
+    }
 }
 
 .bg-top
@@ -320,22 +358,136 @@ span, p
 
 .bg-top-2
 {
-    content: url(images/bg-section-top-mobile-2.svg);
     height: auto;
     width: 100%;
 }
 
 .bg-bottom-2
 {
-    content: url(images/bg-section-bottom-mobile-2.svg);
     height: auto;
     width: 100%;
 }
 
 /*  FOOTER  */
+@media (min-width: 768px)
+{
+    .bg-footer
+    {
+        content: url(images/bg-footer-top-desktop.svg);
+        margin-top: 10rem;
+    }
+
+    footer
+    {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        position: relative;
+    }
+
+    footer .newsletter
+    {
+        grid-column: 2;
+        grid-row: 1;
+        width: 100%;
+    }
+
+    footer .info
+    {
+        grid-column: 1;
+        grid-row: 1;
+        width: 50%;
+    }
+
+    footer .alt
+    {
+        margin-bottom: 5%;
+    }
+
+    footer .news-info
+    {
+        width: 55%;
+    }
+
+    footer input
+    {
+        width: 60%;
+        height: 3rem;
+        margin: 0;
+    }
+
+    .sub
+    {
+        margin: 0;
+        width: 30%;
+        position: absolute;
+        right: 0;
+    }
+
+    .sub p
+    {
+        margin: 0;
+        width: 100%;
+    }
+
+    .newsletter-label
+    {
+        display: flex;
+        position: relative;
+    }
+
+    .space-text
+    {
+        margin: 0 1rem;
+    }
+
+    
+    br
+    {
+        display: none;
+    }
+}
+
+@media (max-width: 768px)
+{
+    footer
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .bg-footer
+    {
+        content: url(images/bg-footer-top-mobile.svg);
+    }
+
+    footer .alt
+    {
+        margin-top: 20%;
+        margin-bottom: 5%;
+    }
+
+    .sub
+    {
+        justify-content: flex-end;
+        width: 100%;
+    }
+
+    .sub p
+    {
+        width: 100%;
+    }
+
+    footer input
+    {
+        width: 100%;
+        height: 2rem;
+        margin-bottom: 1rem;
+    }
+}
 .bg-footer
 {
-    content: url(images/bg-footer-top-mobile.svg);
     height: auto;
     width: 100%;
 }
@@ -345,8 +497,7 @@ footer
     background-color: hsl(192, 100%, 9%);
     color: #fff;
     padding: 5%;
-    display: flex;
-    flex-direction: column;
+    padding-bottom: 0;  
 }
 
 footer h5
@@ -365,26 +516,20 @@ footer p
 
 footer input
 {
-    width: 100%;
-    height: 2rem;
     border: none;
     border-radius: 10px;
     padding: 0 1rem;
-    margin-bottom: 1rem;
 }
 
 footer .sub
 {
     display: flex;
-    width: 100%;
-    justify-content: flex-end;
 }
 
 footer .sub p
 {
     background-color: hsl(322, 100%, 66%);
     color: #fff;
-    width: 50%;
     text-align: center;
     line-height: 3rem;
     border-radius: 10px;
@@ -394,8 +539,6 @@ footer .alt
 {
     filter: invert(100%) sepia(100%) saturate(1%) hue-rotate(152deg) brightness(200%) contrast(102%);
     width: 60%;
-    margin-top: 20%;
-    margin-bottom: 5%;
 }
 
 footer .contact
@@ -429,6 +572,21 @@ footer .social
     justify-content: space-between;
     width: 40%;
     font-size: 2rem;
+}
+
+.under-footer
+{
+    grid-column: span 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.under-footer a
+{
+    text-decoration: none;
+    color: hsl(322, 100%, 66%);
 }
 
 
