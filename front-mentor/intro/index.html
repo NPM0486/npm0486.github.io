@@ -28,7 +28,7 @@
         <b>Try it free 7 days</b> then $20/mo. thereafter
       </h3>
     </section>
-    <form name="trial" action="/front-mentor/intro/valid.html" onsubmit="return validateForm()" method="post">
+    <form name="trial" onsubmit="return validateForm()" method="post">
       <div>
         <label for="first-name" hidden>First Name</label>  
         <input type="text" placeholder="First Name" id="first-name" name="first-name">
@@ -45,14 +45,14 @@
 
       <div>
         <label for="email" hidden>Email Address</label>
-        <input type="email" placeholder="Email Address" id="email" name="email">
+        <input type="text" placeholder="Email Address" id="email" name="email">
         <img src="images/icon-error.svg" alt="error" id="emailImg"></input>
       </div>
       <span id="emailId"></span>
 
       <div>
         <label for="password" hidden>Password</label>
-        <input type="password" placeholder="Password" id="password" name="password" minlength="8">
+        <input type="password" placeholder="Password" id="password" name="password">
         <img src="images/icon-error.svg" alt="error" id="passwordImg"></input>
       </div>
       <span id="passwordId"></span>
