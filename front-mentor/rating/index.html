@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Interactive rating component</title>
+
+</head>
+<body>
+  <main>
+    <article id="form-art">
+      <figure>
+        <img src="./images/icon-star.svg" alt="star">
+      </figure>
+      <h2>How did we do?</h2>
+      <p>
+        Please let us know how we did with your
+        support request. All feedback is appreciated
+        to help us improve our offering!
+      </p>
+      <form name="rate" onsubmit="return thankForm()" method="post">
+        <div class="rating">
+          <label for="rating-1">
+            <input type="radio" name="rating" id="rating-1" value="1">
+            <span>1</span>
+          </label>
+          <label for="rating-2">
+            <input type="radio" name="rating" id="rating-2" value="2">
+            <span>2</span>
+          </label>
+          <label for="rating-3">
+            <input type="radio" name="rating" id="rating-3" value="3">
+            <span>3</span>
+          </label>
+          <label for="rating-4">
+            <input type="radio" name="rating" id="rating-4" value="4">
+            <span>4</span>
+          </label>
+          <label for="rating-5">
+            <input type="radio" name="rating" id="rating-5" value="5">
+            <span>5</span>
+          </label>          
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+    </article>
+    <article id="thanks-art">
+      <img src="./images/illustration-thank-you.svg" alt="thank you">
+      <div>
+        <p>You selected <span id="choosed">0</span> out of 5</p>
+      </div>  
+      <h2>Thank you!</h2>
+      <p>
+        We appreciate you taking the time to give a
+        rating. If you ever need more support, dont
+        hesitate to get in touch!
+      </p>
+    </article>
+  </main>
+  <footer class="attribution">
+    <p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. </p>
+    <p>Coded by <a href="https://npm0486.github.io/" target="_blank">Nikolas Papenfus</a>.</p>
+  </footer>
+</body>
+<script src="script.js"></script>
+</html>

@@ -1,0 +1,228 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.3s ease-in-out;
+}
+
+body
+{
+    background-color: hsl(216, 12%, 8%);
+    font-family: 'Overpass', sans-serif;
+    font-size: 15px;
+}
+
+main
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: calc(100vh - 100px);
+    width: 100%;
+}
+
+article
+{
+    background: radial-gradient(
+        circle at top, 
+        hsl(215, 27%, 17%) 0%, 
+        hsl(215, 27%, 12%) 100% ) ;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    width: 90%;
+    max-width: 340px;
+}
+
+article figure
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+    height: 2rem;
+    background-color: hsl(210, 19%, 18%);
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+}
+
+article figure img
+{
+    height: 0.8rem;
+}
+
+article h2
+{
+    color: hsl(0, 0%, 100%);
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+article p
+{
+    color: hsl(216, 12%, 54%);
+    font-size: 0.9rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+}
+
+article form
+{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+article form .rating
+{
+    display: grid;
+    width: 100%;
+    height: 2.5rem;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: repeat(5, 1fr);
+    margin-bottom: 2rem;
+}
+
+article form .rating label
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+article form .rating input[type="radio"]
+{
+    border: none;
+    appearance: none;
+    background-color: hsl(213, 19%, 18%);
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    position: absolute;
+    cursor: pointer;
+}
+
+article form .rating span
+{
+    color: hsl(217, 12%, 63%);
+    font-size: 0.8rem;
+    font-weight: 400;
+    position: absolute;
+    z-index: 1;
+    pointer-events: none
+}
+
+article form .rating input[type="radio"]:checked
+{
+    background-color: hsl(217, 12%, 63%);
+}
+
+article form .rating input[type="radio"]:checked ~ span
+{
+    color: #fff;
+}
+
+article form .rating input[type="radio"]:hover
+{
+    background-color: hsl(25, 97%, 53%);
+}
+
+article form .rating input[type="radio"]:hover ~ span
+{
+    color: #fff;
+}
+
+article form button[type="submit"]
+{
+    border: none;
+    appearance: none;
+    background-color: hsl(25, 97%, 53%);
+    color: #fff;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    padding: 0.5rem 1rem;
+    border-radius: calc(2.5rem / 2);
+    cursor: pointer;
+    width: 100%;
+    height: 2.5rem;
+}
+
+article form button[type="submit"]:hover
+{
+    background-color: #fff;
+    color: hsl(25, 97%, 53%);
+}
+
+#form-art
+{
+    height: 22rem;
+}
+
+#thanks-art
+{
+    height: 22rem;
+    display: none;
+    
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#thanks-art div
+{
+    background-color: hsl(213, 19%, 18%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2rem;
+    border-radius: 1rem;
+    margin: 1.5rem 0;
+}
+
+#thanks-art div p
+{
+    color: hsla(25, 97%, 53%, 0.5);
+    margin-bottom: 0;
+    padding: 0 1rem;
+}
+
+#thanks-art p
+{
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.attribution 
+{ 
+    font-size: 20px; 
+    text-align: center; 
+    background: radial-gradient(
+        circle at top, 
+        hsl(215, 27%, 14%) 0%, 
+        hsl(215, 27%, 12%) 40% ) ;
+    color: hsl(216, 12%, 54%);
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-weight: 700;
+}
+
+.attribution a 
+{ 
+    color: hsl(25, 97%, 53%); 
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.attribution a:hover 
+{ 
+    text-decoration: underline; 
+}
