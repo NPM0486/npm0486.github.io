@@ -1,0 +1,244 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+}
+
+@media (min-width: 768px)
+{
+    main
+    {
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: 1fr;
+        max-width: 70%;
+        position: relative;
+    }
+    body
+    {
+        display: flex;
+        justify-content: center;
+        background-image: url(./images/bg-desktop.png);
+        background-color: hsl(229, 57%, 11%);
+        background-attachment: fixed;
+        background-position: bottom;
+        background-repeat: no-repeat;
+        background-size: 100% 50%;
+    }
+    .right
+    {
+        max-height: 150px;
+        margin-top: 50px;
+        padding: 35px;
+    }
+    .right .space-left
+    {
+        background-color: #fff;
+        position: absolute;
+        top: -40%;
+        right: 10%;
+
+        width: 200px;
+        height: 75px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px 10px 0 10px;
+    }
+    .right .space-left::before
+    {
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 0;
+        border-right: 30px solid transparent;
+        border-top: 0;
+        border-bottom: 25px solid #fff;
+        transform: rotate(180deg);
+        display: block;
+        bottom: -25px;
+        right: 0;
+    }
+    .left
+    {
+        height: 200px;
+    }
+}
+
+@media (max-width: 768px)
+{
+    main
+    {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    .left
+    {
+        align-self: end;
+    }
+    .right
+    {
+        align-self: start;
+        padding: 10%;
+    }
+    body
+    {
+        background-image: url(./images/bg-mobile.png);
+        background-repeat: no-repeat;
+        background-size: 100vw 100vh;
+    }
+    .right .space-left
+    {
+        background-color: #fff;
+        position: absolute;
+        justify-self: center;
+        bottom: -20%;
+        width: 60%;
+        height: 40%;
+        border-radius: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+main
+{
+    display: grid;
+    width: 100%;
+    min-height: 100vh;
+    place-items: center;
+    gap: 1rem;
+}
+
+.left
+{
+    width: 90%;
+    background-color: hsl(228, 56%, 26%);
+    padding: 10%;
+    border-radius: 1em;
+    border-top-right-radius: 100px;
+
+}
+
+.left section
+{
+    display: flex;
+    width: 100%;
+    justify-content: start;
+    margin-top: 1.5rem;
+}
+
+.left section div
+{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1rem;
+    background-color: hsl(229, 57%, 11%);
+}
+
+.right
+{
+    width: 90%;
+    background-color: hsl(228, 56%, 26%);
+    border-radius: 1rem;
+    color: hsl(243, 100%, 93%);
+    display: grid;
+    position: relative;
+}
+
+.right .load
+{
+    width: 100%;
+    height: 1.5rem;
+    margin-top: 1rem;
+    border-radius: 1rem;
+    background-color: hsla(229, 57%, 11%, 0.4);
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.right .load::before
+{
+    content: '';
+    display: block;
+    width: calc(815 / 1000 * 100%);
+    max-width: 97%;
+    height: 1rem;
+    margin-left: calc(0.5rem / 2);
+    border-radius: 1rem;
+    background: linear-gradient(90deg, hsl(6, 100%, 80%) 0% ,  hsl(335, 100%, 65%) 100%);
+}
+
+.right .load::after
+{
+    content: '';
+    display: block;
+    width: 0.8rem;
+    height: 0.8rem;
+    border-radius: 50%;
+    left: calc(815 / 1000 * 95%);
+    position: absolute;
+    background-color: #fff;
+}
+
+.right .gigs
+{
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+    margin: 1rem 0;
+}
+
+.right .space-left span
+{
+    font-size: 3rem;
+    line-height: 100%;
+    font-weight: 700;
+    line-height: 100%;
+    color: hsl(229, 57%, 11%);
+    margin: 0 0.5rem;
+}
+
+.right .space-left p
+{
+    color: hsl(229, 7%, 55%);
+    line-height: 100%;
+    margin: 0 0.5rem;
+    font-weight: 700;
+}
+
+.attribution 
+{ 
+    font-size: 20px; 
+    text-align: center; 
+    background-color: hsl(229, 57%, 11%);
+    color: hsl(229, 7%, 55%);
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-weight: 700;
+    position: absolute;
+    bottom: 0;
+}
+
+.attribution a 
+{ 
+    color: hsl(0, 100%, 74%); 
+    font-weight: 400;
+    text-decoration: none;
+}
