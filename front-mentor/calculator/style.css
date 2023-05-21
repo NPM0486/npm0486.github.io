@@ -1,0 +1,230 @@
+:root
+{
+    --background: #3a4764;
+    --keypad-background: #232c43;
+    --display-background: #182034;
+    --alt-font-color: #fff;
+    --keys-background: #eae3dc;
+    --font-color: #444b5a;
+    --keypad-background: #232c43;
+    --keys-shadow: #b4a597;
+    --rem-keys-color: #637097;
+    --rem-keys-shadow: #404e72;
+    --equal-color: #d03f2f;
+    --equal-shadow: #93261a70;
+}
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    font-family: 'League Spartan', sans-serif;
+    font-size: 32px;
+    background-color: var(--background);
+}
+
+/*  HEADER  */
+
+header
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--alt-font-color);
+    font-size: 1rem;
+    margin: 2rem;
+}
+
+header section
+{
+    display: grid;
+    width: 40%;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+header section h2
+{
+    font-size: 0.75rem;
+    font-weight: 700;
+    grid-column: 1;
+    grid-row: 2;
+    text-transform: uppercase;
+}
+
+header section button
+{
+    grid-column: 2;
+    grid-row: 2;
+}
+
+header section p
+{
+    grid-column: 2;
+    grid-row: 1;
+    font-size: 0.75rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+/*  MAIN */
+
+main
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem;
+}
+
+/*  DISPLAY */
+
+.display
+{
+    background-color: var(--display-background);
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    color: var(--alt-font-color);
+    overflow: hidden;
+}
+
+.display .displayContainer
+{
+    overflow: hidden;
+    justify-content: flex-end;
+}
+
+.display .displayContainer p
+{
+    float: right;
+}
+
+/*  KEYPAD  */
+
+.keypad
+{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 1rem;
+    margin-top: 2rem;
+    background-color: var(--keypad-background);
+    width: 100%;
+    border-radius: 1rem;
+    padding: 1.5rem;
+}
+
+.keypad .operator
+{
+    border: none;
+    font-family: 'League Spartan', sans-serif;
+    font-size: 2rem;
+    aspect-ratio: 1/1;
+    background-color: var(--keys-background);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--font-color);
+    border-radius: 0.35rem;
+    box-shadow: var(--keys-shadow) 0px 4px 0px;
+}
+
+.keypad .del
+{
+    border: none;
+    font-family: 'League Spartan', sans-serif;
+    background-color: var(--rem-keys-color);
+    color: var(--alt-font-color);
+    border-radius: 0.35rem;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: var(--rem-keys-shadow) 0px 4px 0px;
+}
+
+.keypad .reset
+{
+    border: none;
+    font-family: 'League Spartan', sans-serif;
+    background-color: var(--rem-keys-color);
+    color: var(--alt-font-color);
+    border-radius: 0.35rem;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: var(--rem-keys-shadow) 0px 4px 0px;
+    grid-column: span 2;
+}
+
+.keypad .equal
+{
+    border: none;
+    font-family: 'League Spartan', sans-serif;
+    background-color: var(--equal-color);
+    color: var(--alt-font-color);
+    border-radius: 0.35rem;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: var(--equal-shadow) 0px 4px 0px;
+    grid-column: span 2;
+}
+
+.keypad button
+{
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+.keypad .operator:hover
+{
+    transform: translateY(-10px);
+    box-shadow: var(--keys-shadow) 0px 14px 0px;
+}
+
+.keypad .operator:active
+{
+    transform: translateY(4px);
+    box-shadow: var(--keys-shadow) 0px 0px 0px;
+}
+
+.keypad .del:hover,
+.keypad .reset:hover
+{
+    transform: translateY(-10px);
+    box-shadow: var(--rem-keys-shadow) 0px 14px 0px;
+}
+
+.keypad .del:active,
+.keypad .reset:active
+{
+    transform: translateY(4px);
+    box-shadow: var(--rem-keys-shadow) 0px 0px 0px;
+}
+
+.keypad .equal:hover
+{
+    transform: translateY(-10px);
+    box-shadow: var(--equal-shadow) 0px 14px 0px;
+}
+
+.keypad .equal:active
+{
+    transform: translateY(4px);
+    box-shadow: var(--equal-shadow) 0px 0px 0px;
+}
