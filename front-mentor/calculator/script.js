@@ -27,12 +27,12 @@ for (let i = 0; i < sel.length; i++) {
         }else if(num == '.'){
             for(let j = 0; j < display.length; j++){
                 if(display[j] == '.'){
-                    count = 0;
                     count++;
                     if(count > 1){
-                        display = display.slice(0, j);
-                        console.log(display);
+                        display = display.slice(0, display.length - 1);
+                        count = 1;
                         displayHTML.innerHTML = display;
+                        
                     } else
                     {
                         displayHTML.innerHTML = display;
@@ -55,22 +55,39 @@ reset.addEventListener('click', function () {
     countOperations = 0;
     prevResult = '';
     result = 0;
+    realOper = '';
+    a = 0;
+    b = 0;
+    countNum = 1;
+    count = 0;
 });
 
 //Delete Function
 var del = document.querySelector('.del');
 del.addEventListener('click', function () {
+    if (display[display.length - 1] == '.') {
+        count--;
+    }
     display = display.slice(0, -1);
     if (display == '') {
         display = '0';
     };
+    console.log(display[display.length - 1]);
+    if(display[display.length -1] == '.'){
+        display = display.slice(0, display.length - 1);
+        count--;
+    }
     displayHTML.innerHTML = display;
 });
 
 //Func for operations
 var countOperations = 0;
+var countNum = 1;
 var result = 0;
 var prevResult = '';
+var realOper = '';
+var a = 0;
+var b = 0;
 
 const operations = document.querySelectorAll('.func');
 
@@ -80,30 +97,51 @@ for (let i = 0; i < operations.length; i++) {
             prevResult = operations[i].innerHTML;
         }
         if (countOperations == 0) {
-            result = display;
+            a = display;
+            realOper = prevResult;
+            countNum++;
             display = '0';
             displayHTML.innerHTML = display;
             countOperations++;
         } else {
             if (countOperations == 2){
                 countOperations--;
-            } else if (prevResult == '+') {
-                result = parseFloat(result) + parseFloat(display);
-            } else if (prevResult == '-') {
-                result = parseFloat(result) - parseFloat(display);
-            } else if (prevResult == 'x') {
-                result = parseFloat(result) * parseFloat(display);
-            } else if (prevResult == '/') {
-                result = parseFloat(result) / parseFloat(display);
-                if(result == 'Infinity'){
-                    result = 'Error';
+                realOper = prevResult;
+            } else {
+                if (countNum == 1) {
+                    a = display;
+                    realOper = prevResult;
+                    countNum == 2;
                 }
-                let resultString = result.toString();
-                let resultDot = resultString.indexOf('.');
-                let decimals = resultString.slice(resultDot + 1, resultString.length);
-                if(decimals.length > 6){
-                    result = result.toFixed(6);
+                if (countNum == 2) {
+                    b = display;
+                    countNum++;
                 }
+                if (countNum == 3) {
+                    if (realOper == '+') {
+                        result = parseFloat(a) + parseFloat(b);
+                    } else if (realOper == '-') {
+                        result = parseFloat(a) - parseFloat(b);
+                    } else if (realOper == 'x') {
+                        result = parseFloat(a) * parseFloat(b);
+                    } else if (realOper == '/') {
+                        result = parseFloat(a) / parseFloat(b);
+                    }
+                    if(result == 'Infinity'){
+                        result = 'Error';
+                    }
+                    let resultString = result.toString();
+                    let resultDot = resultString.indexOf('.');
+                    let decimals = resultString.slice(resultDot + 1, resultString.length);
+                    if(decimals.length > 6){
+                        result = result.toFixed(6);
+                    }
+                    realOper = prevResult;
+                    a = result;
+                    b = 0;
+                    countNum = 2;
+                }
+
             }
             if (prevResult == '=') {
                 result = display;
@@ -115,6 +153,7 @@ for (let i = 0; i < operations.length; i++) {
             displayHTML.innerHTML = '=' + result;
             prevResult = '=';
             countOperations++;
+            countNum = 2;
         }
 
     });
