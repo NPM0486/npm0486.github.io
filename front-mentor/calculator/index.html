@@ -16,12 +16,17 @@
     <h1>calc</h1>
     <section>
       <h2>theme</h2>
-      <p>
-        <span>1</span>
-        <span>2</span>
-        <span>3</span>
-      </p>
-      <button>O</button>
+      <section class="themeSwitcher">
+        <input type="radio" name="theme" id="theme1" value="1" checked>
+        <label for="theme1">1</label>
+
+        <input type="radio" name="theme" id="theme2" value="2">
+        <label for="theme2">2</label>
+
+        <input type="radio" name="theme" id="theme3" value="3">
+        <label for="theme3">3</label>
+        <div></div>
+      </section>
     </section>
 </header>
 <main>
@@ -51,6 +56,11 @@
     <button class="equal func">=</button>
   </article>
 </main>
+<footer class="attribution">
+  <p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. </p>
+  <p>Coded by <a href="https://npm0486.github.io/" target="_blank">Nikolas Papenfus</a>.</p>
+</footer>
 </body>
 <script type="text/javascript" src="./script.js"></script>
+<script type="text/javascript" src="./theme.js"></script>
 </html>

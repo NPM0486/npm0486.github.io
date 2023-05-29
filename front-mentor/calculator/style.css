@@ -1,17 +1,20 @@
 :root
 {
-    --background: #3a4764;
-    --keypad-background: #232c43;
-    --display-background: #182034;
-    --alt-font-color: #fff;
-    --keys-background: #eae3dc;
-    --font-color: #444b5a;
-    --keypad-background: #232c43;
-    --keys-shadow: #b4a597;
-    --rem-keys-color: #637097;
-    --rem-keys-shadow: #404e72;
-    --equal-color: #d03f2f;
-    --equal-shadow: #93261a70;
+     --background: #3a4764;
+     --keypad-background: #232c43;
+     --display-background: #182034;
+     --alt-font-color: #fff;
+     --keys-background: #eae3dc;
+     --font-color: #444b5a;
+     --keys-shadow: #b4a597;
+     --rem-keys-color: #637097;
+     --rem-keys-shadow: #404e72;
+     --equal-color: #d03f2f;
+     --equal-shadow: #93261a70;
+     --alt-alt-font-color: #fff;
+     --equal-font-color: #fff;
+     --toogle-background: #232c43;
+     --toogle-circle: #d03f2f;
 }
 
 *
@@ -19,6 +22,18 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+@media (min-width: 500px)
+{
+    body
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: calc(100vh - 100px);
+    }
 }
 
 body
@@ -29,7 +44,21 @@ body
 }
 
 /*  HEADER  */
-
+@media (min-width: 500px)
+{
+    header
+    {
+        width: 30rem;
+    }
+    main
+    {
+        width: 30rem;
+    }
+    .operator
+    {
+        padding: 1rem;
+    }
+}
 header
 {
     display: flex;
@@ -44,9 +73,11 @@ header section
 {
     display: grid;
     width: 40%;
+    max-width: 7rem;
     align-items: center;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
+    position: relative;
 }
 
 header section h2
@@ -58,20 +89,52 @@ header section h2
     text-transform: uppercase;
 }
 
-header section button
+header section .themeSwitcher
 {
     grid-column: 2;
-    grid-row: 2;
+    grid-row: span 2;
+    display: grid;
+    gap: 5px;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+    place-items: center;
 }
 
-header section p
+header section .themeSwitcher input[type="radio"]
 {
-    grid-column: 2;
-    grid-row: 1;
-    font-size: 0.75rem;
-    display: flex;
-    justify-content: space-around;
+    grid-row: 2;
+    appearance: none;
+    display: grid;
+    place-content: center;
 }
+
+header section .themeSwitcher input[type="radio"]::before
+{
+    content: "";
+    width: 0.8rem;
+    height: 0.8rem;
+    border-radius: 50%;
+    scale: 0;
+    background-color: var(--toogle-circle);
+}
+
+header section .themeSwitcher input[type="radio"]:checked::before
+{
+    scale: 1;
+}
+
+header section .themeSwitcher div
+{
+    grid-row: 2;
+    background-color: var(--toogle-background);
+    width: 100%;
+    border-radius: 1rem;
+    z-index: -1;
+    height: 1.2rem;
+    position: absolute;
+}
+
+
 
 /*  MAIN */
 
@@ -126,12 +189,17 @@ main
     padding: 1.5rem;
 }
 
+@media (max-width: 500px) {
+    .operator{
+        aspect-ratio: 1/1;
+    }
+}
+
 .keypad .operator
 {
     border: none;
     font-family: 'League Spartan', sans-serif;
     font-size: 2rem;
-    aspect-ratio: 1/1;
     background-color: var(--keys-background);
     display: flex;
     align-items: center;
@@ -146,7 +214,7 @@ main
     border: none;
     font-family: 'League Spartan', sans-serif;
     background-color: var(--rem-keys-color);
-    color: var(--alt-font-color);
+    color: var(--alt-alt-font-color);
     border-radius: 0.35rem;
     font-size: 1.2rem;
     display: flex;
@@ -160,7 +228,7 @@ main
     border: none;
     font-family: 'League Spartan', sans-serif;
     background-color: var(--rem-keys-color);
-    color: var(--alt-font-color);
+    color: var(--alt-alt-font-color);
     border-radius: 0.35rem;
     font-size: 1.2rem;
     display: flex;
@@ -175,7 +243,7 @@ main
     border: none;
     font-family: 'League Spartan', sans-serif;
     background-color: var(--equal-color);
-    color: var(--alt-font-color);
+    color: var(--equal-font-color);
     border-radius: 0.35rem;
     font-size: 1.2rem;
     display: flex;
@@ -227,4 +295,40 @@ main
 {
     transform: translateY(4px);
     box-shadow: var(--equal-shadow) 0px 0px 0px;
+}
+
+/*  FOOTER  */
+@media (min-width: 500px) {
+    .attribution{
+        position: absolute;
+        bottom: 0;
+    }
+}
+
+.attribution 
+{ 
+    font-size: 20px; 
+    text-align: center; 
+    background-color: #666;
+    color: hsl(0, 0%, 95%);
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-weight: 300;
+}
+
+.attribution a 
+{ 
+    color: hsla(0, 0%, 100%, 0.75); 
+    text-decoration: none;
+    transition: all 0.5s ease-in-out;
+}
+
+.attribution a:hover
+{
+    color: blue;
+    text-decoration: underline;
 }
